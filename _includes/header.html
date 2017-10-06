@@ -1,0 +1,53 @@
+{% include atom-skip-links.html %}
+<header class="site-header" role="banner">
+  <div class="site-header__bg-helper">
+    <div class="site-header__bg-helper__row row">
+      <div class="site-header__bg-helper__column columns"></div>
+    </div>
+  </div>
+  <div class="wrapper site-header__main">
+    <div class="site-header__row">
+      <div class="site-header__col">
+
+        <a href="{{ "/" | relative_url}}" class="site-header__logo">
+          <svg class="site-header__logo-ucla">
+            <title>
+              UCLA
+            </title>
+            <use xlink:href="/assets/img/merged.svg#logo-main" />
+          </svg>
+          <svg  class="site-header__logo-optimist">
+            <title>
+              The Optimists
+            </title>
+            <use xlink:href="/assets/img/merged.svg#logo-optimists" />
+          </svg>
+        </a>
+        {% assign current = page.url | downcase | split: '/' %}
+        <nav class="site-nav" role="navigation">
+          <ul class="site-nav__list" id="main-navigation" role="menu">
+            <li class="site-nav__item{% if current[1] == 'profiles' %} active{% endif %}" role="menuitem">
+              <a href="/profiles/">Optimists</a>
+            </li>
+            <li class="site-nav__item{% if current[1] == 'videos' %} active{% endif %}" role="menuitem">
+              <a href="/videos/">Videos</a>
+            </li>
+            <li class="site-nav__item{% if current[1] == 'stories' %} active{% endif %}" role="menuitem">
+              <a href="/stories/">Stories</a>
+            </li>
+            <li class="site-nav__item site-nav__item--stay-informed" role="menuitem">
+              <a href="#" id="stay-informed-trigger">Stay Informed</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-mobile-trigger">
+          <div class="site-mobile-trigger__bar" role="button"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-stay-informed" id="stay-informed" v-cloak aria-hidden="true">
+    {% include stay-informed.html %}
+  </div>
+
+</header>

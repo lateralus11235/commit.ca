@@ -1,0 +1,52 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta class="foundation-mq">
+
+  <link type="text/css" rel="stylesheet" href="/assets/css/{% for hash in site.data.css.hash %}{{hash[1]}}{% endfor %}">
+
+  <meta name="author" content="{{ site.site-author }}">
+  <meta name="msapplication-TileColor" content="#f01d4f">
+  <meta name="msapplication-TileImage" content="/assets/img/win8-tile-icon.png">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  {% if page.keywords %} <meta name="keywords" content="{{ page.keywords }}" /> {% else %} <meta name="keywords" content="{{ site.keywords }}" /> {% endif %}
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link href="/assets/img/apple-icon-touch.png" rel="apple-touch-icon" />
+  <meta name="msapplication-TileColor" content="#f01d4f">
+  <meta name="msapplication-TileImage" content="/assets/img/win8-tile-icon.png">
+  <meta name="theme-color" content="#121212">
+
+<!--open graph -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{%if page.header %}{{ page.header }}{% elsif page.title %}{{ page.title}}{% else %}{{ site.og-title }}{% endif %}">
+  <meta property="og:url" prefix="og: http://ogp.me/ns#" content="{% if page.short-url %}{{ page.short-url }}{% else %}{{ site.short-url }}{% endif %}">
+  <meta property="og:image" prefix="og: http://ogp.me/ns#" content="{% if page.layout == "story-post" and page.image %}{{ site.url }}/assets/img/stories/{{ page.image }}/index.jpg{% elsif page.image and page.layout == "optimist-post" %}{{ site.url }}/assets/img/profile/desktop/large/{{ page.image }}-large-retina.jpg{% else %}{{ site.og-image }}{% endif %}" />
+  <meta property="og:headline" content="{% if page.og-headline %}{{ page.og-headline }}{% else %}{{ site.og-headline }} {% endif %}">
+  <meta property="og:site_name" content="{{ page.title }}">
+  <meta property="og:description" content="{% if page.og-description %}{{ page.og-description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+<!--twitter-->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.twitter-description %}{{ page.twitter-description }}{% else %}{{ site.twitter-description }}{% endif %}">
+  <meta name="twitter:hashtags" content="{% if page.twitter-hashtags %}{{ page.twitter-hashtags }}{% else %}{{ site.twitter-hashtags }}{% endif %}">
+  <meta name="twitter:site" content="{{ site.twitter-site }}" />
+  <meta name="twitter:image" content="{% if page.layout == "story-post" and page.image %}{{ site.url }}/assets/img/stories/{{ page.image }}/index.jpg{% elsif page.image and page.layout == "optimist-post" %}{{ site.url }}/assets/img/profile/desktop/large/{{ page.image }}-large-retina.jpg{% else %}{{ site.twitter-image }}{% endif %}" />
+  <meta name="twitter:url" content="{% if page.short-url %}{{ page.short-url }}{% else %}{{site.short-url}}{% endif %}">
+
+<!-- googleplus -->
+  <meta itemprop="name" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta itemprop="description" content="{% if page.og-description %}{{ page.og-description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta itemprop="image" content="{% if page.layout == "story-post" and page.image %}{{ site.url }}/assets/img/stories/{{ page.image }}/index.jpg{% elsif page.image and page.layout == "optimist-post" %}{{ site.url }}/assets/img/profile/desktop/large/{{ page.image }}-large-retina.jpg{% else %}{{ site.og-image }}{% endif %}"">
+
+  {% include google-tag-manager.html %}
+  {% include google-analytics.html %}
+
+</head>

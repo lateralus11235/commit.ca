@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="js-loading">
+    {% include google-tag-manager-noscript.html %}
+    {% include header.html %}
+    <section id="maincontent" role="main">
+	    {{ content }}
+	    {% include newsletter-signup.html %}
+    </section>
+    {% include back-to-top.html %}
+    {% include footer.html %}
+    {% include scripts.html %}
+
+  </body>
+
+</html>

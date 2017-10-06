@@ -1,0 +1,7 @@
+_site
+.idea
+node_modules
+_data/css
+_data/js
+/assets/css
+/assets/js

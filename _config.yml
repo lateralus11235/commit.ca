@@ -1,0 +1,58 @@
+# General Configuration
+title: The Optimists - UCLA
+email: ""
+description: UCLA is a world-class public research university made up of people who believe that anything is possible. People who never settle for the status quo. Who never give up. We call these people Optimists. And every day, all over the world, our lives are made better by something UCLA Optimists have discovered, improved, invented or created.
+baseurl: ""
+url: "http://optimists.ucla.edu"
+keywords: ""
+site-author: "UCLA"
+copyright: "2017 UCLA"
+short-url: "http://ucla.in/UDwIAQ"
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+
+#Excluded Files
+exclude: ["vendor",
+          CNAME,
+          "_assets",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json",
+          "js/foundation-sites/",
+          "js/jquery/",
+          "js/motion-ui/",
+          "js/scripts/",
+          "css/vendor/",
+          "readme.md",
+          "gulpfile-dev.js",
+          "gulpfile.babel.js",
+          "package-lock.json",
+          "yarn.lock",
+          ]
+
+# Social links
+
+twitter: "https://twitter.com/ucla"
+facebook: "https://www.facebook.com/uclabruins"
+youtube: "https://www.youtube.com/ucla"
+instagram: "https://www.instagram.com/ucla"
+
+# Open Graph Information
+og-title: "The Optimists - UCLA"
+og-headline: "The Optimists - UCLA"
+og-image: "/assets/img/global-share-image.jpg"
+
+#Twitter Information
+
+twitter-description: "Powered by optimism @UCLA Optimists always find a way. #OptimismCan. Explore how at"
+twitter-site: "@ucla"
+twitter-hashtags: "UCLAOptimism"
+twitter-image: "/assets/img/global-share-image.jpg"
+
+#Optimists Index
+optimist-featured-amount: 8

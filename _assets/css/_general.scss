@@ -1,0 +1,74 @@
+/************************************************
+
+Stylesheet: Main Stylesheet
+
+*************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+em, i {
+  font-weight: inherit;
+}
+/*********************
+LINK STYLES
+*********************/
+.orbit-figure {
+	a {
+		font-weight: 400;
+	}
+}
+body.js-loading {
+  .orbit-slide:not(:first-of-type) {
+    display: none;
+  }
+}
+a {
+	color: $color--darkestblue;
+	font-weight: 500;
+	transition: color .3s ease, text-decoration .3s ease;
+
+	&:hover {
+		color: $color--links;
+	}
+
+	&:active {
+		color: $color--links;
+		text-decoration: underline;
+	}
+}
+
+/*********************
+H1, H2, H3, H4, H5 P STYLES
+*********************/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+	letter-spacing: 0.025em;
+	font-family: $karbon;
+	// Removing text decoration from all headline links
+	a {
+		text-decoration: none;
+	}
+}
+
+p, .p {
+	font-size: 13px;
+	line-height: 1.5;
+
+	@include breakpoint (medium) {
+		font-size: 17px;
+		line-height: 1.7;
+	}
+}
+
+/*********************
+HEADER STYLES
+*********************/
+.header {
+	ul.off-canvas-list li {
+		list-style: none;
+	}
+}
+
+
+/*=======GENERAL CLASSES=============*/
