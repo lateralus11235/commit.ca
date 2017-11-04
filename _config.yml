@@ -16,23 +16,20 @@ gems:
 
 #Excluded Files
 exclude: ["vendor",
-          CNAME,
           "_assets",
           "Gemfile",
           "Gemfile.lock",
           "gulpfile.js",
           "node_modules",
+          "icons",
           "package.json",
-          "js/foundation-sites/",
-          "js/jquery/",
-          "js/motion-ui/",
-          "js/scripts/",
-          "css/vendor/",
-          "readme.md",
-          "gulpfile-dev.js",
-          "gulpfile.babel.js",
           "package-lock.json",
-          "yarn.lock",
+          "README.md",
+          "LICENSE.txt",
+          "js",
+          "css",
+          "webpack.config.js",
+          "webpack.build.config.js"
           ]
 
 # Social links
