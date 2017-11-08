@@ -10,6 +10,9 @@
       </div>
     </div>
 
+    <div class="wave">
+      
+    </div>
     <div class="iceberg">
       <div class="iceberg__inner"></div>
     </div>

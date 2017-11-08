@@ -79,13 +79,16 @@
     &:before{
       content: "";
       @include fill;
-      width: 200%;
-      height: 200%;
-      margin-left: -50%;
-      margin-top: -50%;
+      width: 250%;
+      height: 250%;
+      margin-left: -75%;
+      margin-top: -75%;
       transform-origin: center;
       transform: rotate(20deg);
       pointer-events: none;
+
+      animation: kenBurns 16s linear infinite alternate;
+      animation-fill-mode: both;
 
       background-image: url(../media/clouds.svg);
       background-size: cover;
@@ -146,4 +149,15 @@
   -ms-transform: translateY(-5.8px) rotate(-45deg);
   -o-transform: translateY(-5.8px) rotate(-45deg);
   transform: translateY(-5.8px) rotate(-45deg);
+}
+
+
+
+@keyframes kenBurns {
+  0% {
+    transform: rotate(20deg) scale(0.9) translate(0px,0px);
+  }
+  100% {
+    transform: rotate(20deg) scale(1) translate(-50px,-50px);
+  }
 }
