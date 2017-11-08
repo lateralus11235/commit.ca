@@ -6,10 +6,16 @@
   }
   &__desc{
     .what-we-offer__item:nth-of-type(2n) & {
-      order: -1;
+      @include breakpoint(large){
+        order: -1;
+      }
+      
     }
   }
   &__item.row{
-    flex-flow: row;
+    @include breakpoint(large){
+      flex-flow: row;
+    }
+    
   }
 }

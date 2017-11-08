@@ -1,6 +1,25 @@
 .hero{
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../media/clouds.svg);
+  background-size: cover;
+}
+
+.iceberg{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__inner{
+    width: 100%;
+    padding-bottom:296.17396724%;
+    background-image: url(../media/iceberg.svg);
+    background-size: contain;
+    background-position: top center;
+
+  }
 }

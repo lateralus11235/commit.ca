@@ -22,8 +22,6 @@
             
           </div>
         </div>
-        <div class="column large-6 what-we-offer__icon">
-        </div>
       </div>
 
     </div>

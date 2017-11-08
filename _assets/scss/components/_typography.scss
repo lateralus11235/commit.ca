@@ -5,6 +5,12 @@ body{
 h1{
   font-size: $fz-giant;
   line-height: 1;
+
+  @include breakpoint(large) {
+
+    max-width: 20em;
+    margin: 0 auto;
+  }
 }
 h2{
   font-size: $fz-giant;

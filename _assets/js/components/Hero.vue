@@ -9,6 +9,10 @@
         </div>
       </div>
     </div>
+
+    <div class="iceberg">
+      <div class="iceberg__inner"></div>
+    </div>
   </section>
 </template>
 <script>

@@ -3,6 +3,7 @@
   top: 0;
   width: 200px;
   max-width: 20vw;
+  min-width: 130px;
   
   overflow: hidden;
   &__inner{
@@ -32,6 +33,8 @@
     cursor: pointer;
     font-size: 0.58px;
     z-index: 1000;
+    margin-top: map-get($grid-column-gutter, small);
+    margin-right: map-get($grid-column-gutter, small);
   }
 
   &__blog{
@@ -42,6 +45,8 @@
     font-size: $fz-small;
     font-family: $ff-oswald;
     z-index: 1000;
+    margin-top: map-get($grid-column-gutter, small);
+    margin-right: map-get($grid-column-gutter, small);
     a{
       text-decoration: none;
     }
@@ -67,7 +72,7 @@
 .hamburger .line{
   width: 23px;
   height: 3px;
-  background-color: #ecf0f1;
+  background-color: $c-white;
   display: block;
   margin: 3px auto;
   -webkit-transition: all 0.3s ease-in-out;
