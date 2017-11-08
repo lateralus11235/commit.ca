@@ -9,9 +9,15 @@
           <a href="#">Visit our blog for more</a>
         </div>
         <div class="column large-6" v-for="i in 3">
-          <div class="blog__date">
-            01/07
+          <div class="blog__top">
+            <div class="blog__date">
+              01/07
+            </div>
+            <div class="blog__category">
+              <a href="#">Technlogy</a>
+            </div>  
           </div>
+          
           <div class="blog__title">
             Donec a congue leo. Potenti et eros sed justo commodo bibendum non at nunc. 
           </div>

@@ -4,10 +4,13 @@
       <div class="row">
         <div class="column large-6">
           <h2>
-            About us
+            Communicating IT
           </h2>
           <p>
-            Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Potenti et eros sed justo commodo bibendum non at nunc. Suspendisse potenti cras molestie, risus a enim convallis vitae luctus libero lacinia.
+            We are a team of dedicated professionals, focused on supporting organizations with their most complex challenges. We thrive on challenges, and believe deeply that effective communication is the key to delivering value with Information Technology.
+          </p>
+          <p class="about-us__join">
+            Join our team! We offer exciting and compelling opportunities for high-performing team members. Submit your resume at <a class="mail" href="mailto:employment@commit.ca">employment@commit.ca</a>
           </p>
         </div>
       </div>

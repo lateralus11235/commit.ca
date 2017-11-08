@@ -1,0 +1,15 @@
+.what-we-offer {
+  text-align: center;
+  &__icon{
+    display: block;
+    height: 400px;
+  }
+  &__desc{
+    .what-we-offer__item:nth-of-type(2n) & {
+      order: -1;
+    }
+  }
+  &__item.row{
+    flex-flow: row;
+  }
+}
