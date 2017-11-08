@@ -18,7 +18,20 @@
     </div>
     <div class="nav__open" :class="{'nav__open--open': navOpen}">
       <nav>
-        
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#">What We Offer</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#">Recent News</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#">About Us</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </div>

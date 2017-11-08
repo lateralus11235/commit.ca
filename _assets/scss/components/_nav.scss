@@ -53,18 +53,62 @@
   }
 
   &__open{
-    background-color: red;
     @include fill;
     position: fixed;
     opacity: 0;
     pointer-events: none;
-    transition: 1s opacity, 1s box-shadow;
+    transition: 1s opacity;
     box-shadow: 0;
     z-index: 900;
+
+    &:after{
+      box-shadow: none;
+      transition: 1s box-shadow;
+      content: "";
+      @include fill;
+      pointer-events: none;
+    }
     &--open{
       pointer-events: auto;
       opacity: 1;
-      box-shadow: inset 0 0 0 10px $c-white;
+      &:after{
+
+        box-shadow: inset 0 0 0 10px $c-white;
+      }
+    }
+    &:before{
+      content: "";
+      @include fill;
+      width: 200%;
+      height: 200%;
+      margin-left: -50%;
+      margin-top: -50%;
+      transform-origin: center;
+      transform: rotate(20deg);
+      pointer-events: none;
+
+      background-image: url(../media/clouds.svg);
+      background-size: cover;
+    }
+  }
+
+  &__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include fill;
+    &-item{
+      list-style: none;
+      display: block;
+      text-transform: uppercase;
+      font-family: $ff-oswald;
+      font-size: $fz-giant;
+      font-weight: $fw-bold;
+      a{
+        text-decoration: none;
+      }
     }
   }
 }
