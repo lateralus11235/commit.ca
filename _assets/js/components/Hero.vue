@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <div class="container">
+    <div class="container hero__main">
       <div class="row">
         <div class="column large-10 large-offset-1">  
           <h1>

@@ -1,3 +1,5 @@
+$icebergMaxWidth: 700px;
+
 .hero{
 
   display: flex;
@@ -5,21 +7,33 @@
   align-items: center;
   background-image: url(../media/clouds.svg);
   background-size: cover;
+  position: relative;
+  margin-bottom: 70%;
+  @include breakpoint(large) {
+    margin-bottom: $icebergMaxWidth*1.028;
+  }
+
+  &__main{
+    position: relative;
+    z-index: 200;
+  }
 }
 
 .iceberg{
-  width: 100%;
+  width: 90%;
+  max-width: $icebergMaxWidth;
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(62%);
+  z-index: 0;
 
   &__inner{
     width: 100%;
-    padding-bottom:296.17396724%;
+    padding-bottom:156.94560992%;
     background-image: url(../media/iceberg.svg);
     background-size: contain;
-    background-position: top center;
-
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

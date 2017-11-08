@@ -55,8 +55,8 @@ module.exports = {
                 include: path.resolve(__dirname, '_assets/fonts'),
             },{
                 test: /\.(jpg|png|gif|svg)$/,
-                loader: 'file-loader?name=/img/[name].[ext]',
-                include: path.resolve(__dirname, '_assets/img'),
+                loader: 'file-loader?name=/media/[name].[ext]',
+                include: path.resolve(__dirname, '_assets/media'),
             }
         ]
     },
