@@ -8,3 +8,9 @@ section{
 a{
   color: inherit;
 }
+.app-inner{
+  &--nav{
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}

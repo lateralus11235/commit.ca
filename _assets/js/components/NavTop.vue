@@ -9,7 +9,7 @@
     <div class="nav__blog">
       <a href="#">Visit blog</a>
     </div>
-    <div class="nav__trigger" @click="navOpen = !navOpen">
+    <div class="nav__trigger" @click="$store.commit('TOGGLE_NAV')">
       <div class="hamburger" id="hamburger-1" :class="{'is-active': navOpen}">
         <span class="line"></span>
         <span class="line"></span>
@@ -38,9 +38,13 @@
 </template>
 <script>
   export default {
+    computed: {
+      navOpen() {
+        return this.$store.state.navOpen
+      }
+    },
     data() {
       return {
-        navOpen: false
       }
     }
   }

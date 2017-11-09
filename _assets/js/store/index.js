@@ -4,11 +4,18 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 
-const state = {}
+const state = {
+  navOpen: false
+}
 
-const mutations = {}
+const mutations = {
+  TOGGLE_NAV (state) {
+    state.navOpen = !state.navOpen
+  },
+}
 
-const actions = {}
+const actions = {
+}
 
 
 
