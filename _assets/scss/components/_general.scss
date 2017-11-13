@@ -14,3 +14,31 @@ a{
     overflow: hidden;
   }
 }
+.reef{
+  width: 100%;
+  display: block;
+  padding-bottom: 110.55787278%;
+  background-image: url(../media/reef.svg);
+  background-size: contain;
+  margin-top: -75%;
+  margin-bottom: -10%;
+  @include breakpoint(medium) {
+    margin-bottom: -22%;
+  }
+  z-index: 500;
+  position: relative;
+}
+
+.reef-bottom{
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 0;
+  padding-bottom: 113.58711864%;
+  background-image: url(../media/reef-footer.svg);
+  background-size: contain;
+
+}

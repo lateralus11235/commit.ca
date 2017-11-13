@@ -1,0 +1,11 @@
+.contact{
+  background-color: $c-blue-water-contact;
+  position: relative;
+  padding-bottom: 70%;
+  padding-top: 20%;
+
+  &__wrapper{
+    position: relative;
+    z-index: 1000;
+  }
+}

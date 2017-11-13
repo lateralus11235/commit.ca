@@ -1,15 +1,18 @@
 <template>
   <section class="what-we-offer">
+    <div class="reef"></div>
+
     <div class="container">
       <div class="row">
-        <div class="column large-6 large-offset-3 what-we-offer__headline">
+        <div class="column medium-6 medium-offset-3 what-we-offer__headline">
           <h3>
              As a business or IT executive, communicating and achieving outcomes isn't easy. It takes hard work, specific skills, and capabilities to ensure success. Communicating IT can help you through your journey.
           </h3>
         </div>
       </div>
       <div class="row what-we-offer__item" v-for="item in items">
-        <div class="column large-6 what-we-offer__icon">
+        <div class="column large-6 what-we-offer__icon" :class="['what-we-offer__icon--' + item.title.replace(/\s+/g, '').toLowerCase() ]">
+          <div class="what-we-offer__icon-inner"></div>
         </div>
         <div class="column large-6 end what-we-offer__desc">
           <h3 class="what-we-offer__header">

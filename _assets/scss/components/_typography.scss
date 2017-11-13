@@ -13,7 +13,10 @@ h1{
   }
 }
 h2{
+  font-size: $fz-giant-sm;
+  @include breakpoint(large) {
   font-size: $fz-giant;
+  }
 }
 h1,h2{
   text-transform: uppercase;
