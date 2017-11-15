@@ -1,11 +1,97 @@
+$aboutUsBottom: 30vw;
+$aboutUsTop: 43vw;
+$aboutUsBoth: $aboutUsTop + $aboutUsBottom;
+
 .about-us{
   text-align: center;
+  position: relative;
+  z-index: 500;
+  margin-bottom: -1 * $aboutUsBoth;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: calc(100% - #{$aboutUsBoth});
+    z-index: 200;
+    background-color: $c-blue-about;
+  }
+  
+
+
+  &__wrapper{
+    position: relative;
+    transform: translateY(#{-1 * $aboutUsTop});
+    z-index: 500;
+  }
 
   &__helper{
+    position: absolute;
+    width: 100%;
+    height: 0;
 
-    
-    &--top,&--bottom{
+
+    &:before{
+      content: "";
+      @include fill;
+      z-index: 50;
+      width: 200vw;
+      transform-origin: center;
+      height: 10vw;
+      box-shadow: 0 0 400px 100px $c-blue-about-shadow, inset 0 0 400px 50px $c-blue-about-shadow;
+    }
+
+    &:after{
+      content: "";
+      @include fill;
+      z-index: 100;
+    }
+    &--top{
+      top: 0;
+      transform: translateY(-100%);
+      //margin-top: -71.42857143%;
+      padding-bottom: 71.42857143%;
+      &:after{
+
+        background-image: url(../media/newreef2.svg);
+        background-size: contain;
+      }
+      z-index: 100;
+
+      background-image: url(../media/newreef.svg);
+      background-size: contain;
+      &:before{
+        transform: rotate(26deg) translate(-50vw, 55vw);
+      }
+    }
+    &--bottom{
+
+      bottom: $aboutUsBoth;
+      transform: translateY(100%);
+      //margin-top: -71.42857143%;
+      padding-bottom: 71.42857143%;
+      &:after{
+        background-image: url(../media/newreefbottom2.svg);
+        background-size: contain;
+      }
+
+      &:before{
+        transform: rotate(23deg) translate(-46vw, 37vw);
+      }
+
+      background-image: url(../media/newreefbottom.svg);
+      background-size: contain;
       
     }
+  }
+}
+
+.partner {
+  &__header{
+    margin-top: $aboutUsBottom * 0.5;
+    transition: translateY(-50%);
   }
 }

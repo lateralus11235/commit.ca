@@ -2,9 +2,9 @@
   <section class="contact">
     <div class="contact__wrapper">
       <div class="container">
-        <div class="row">
+        <div class="row align-middle">
           <div class="column large-6">
-            <h2>Contact Us</h2>
+            <h2 class="contact__header">Contact Us</h2>
           </div>
           <div class="column large-6">
             <h3>

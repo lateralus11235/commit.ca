@@ -1,6 +1,7 @@
 body{
   background-color: $c-bg;
   color: $c-text;
+
 }
 section{
   min-height: 700px;
@@ -9,9 +10,13 @@ a{
   color: inherit;
 }
 .app-inner{
+  max-width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   &--nav{
     max-height: 100vh;
     overflow: hidden;
+
   }
 }
 .reef{
@@ -27,6 +32,10 @@ a{
   }
   z-index: 500;
   position: relative;
+
+  &--upside-down{
+    transform: scaleY(-1);
+  }
 }
 
 .reef-bottom{

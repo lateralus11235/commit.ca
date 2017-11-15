@@ -1,8 +1,10 @@
 .contact{
+
   background-color: $c-blue-water-contact;
   position: relative;
   padding-bottom: 70%;
-  padding-top: 20%;
+  padding-top: 0%;
+  padding-top: calc(0% + #{$aboutUsBoth});
 
   &__wrapper{
     position: relative;

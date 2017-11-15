@@ -11,8 +11,11 @@
         </div>
       </div>
       <div class="row what-we-offer__item" v-for="item in items">
-        <div class="column large-6 what-we-offer__icon" :class="['what-we-offer__icon--' + item.title.replace(/\s+/g, '').toLowerCase() ]">
-          <div class="what-we-offer__icon-inner"></div>
+        <div class="column large-6 ">
+          
+          <div class="what-we-offer__icon" :class="['what-we-offer__icon--' + item.title.replace(/\s+/g, '').toLowerCase() ]">
+            <div class="what-we-offer__icon-inner"></div>
+          </div>
         </div>
         <div class="column large-6 end what-we-offer__desc">
           <h3 class="what-we-offer__header">

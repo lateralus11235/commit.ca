@@ -5,6 +5,8 @@
 
   &__wrapper{
     padding-top: 24%;
+    padding-bottom: 71.42857143%;
+    overflow: hidden;
     background:$c-blue-water-blog linear-gradient(180deg, $c-blue-water-blog, $c-blue-water-blog-lower) left top no-repeat;
   }
   &__row.row{

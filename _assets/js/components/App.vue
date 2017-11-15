@@ -1,5 +1,5 @@
 <template>
-  <div id="app-inner" :class="{'app-inner--nav': $store.state.navOpen}">
+  <div id="app-inner" class="app-inner" :class="{'app-inner--nav': $store.state.navOpen}">
     <nav-top></nav-top>
     <hero></hero>
     <what-we-offer></what-we-offer>

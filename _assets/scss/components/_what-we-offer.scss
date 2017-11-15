@@ -30,28 +30,35 @@
   }
   &__icon{
     display: block;
-    height: 300px;
-    min-height: 300px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-bottom: $m-large;
+    //padding-top: $m;
+    &-inner{
 
-    &--visioning{
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      padding-bottom: 100%;
+    }
+
+    &--visioning &-inner{
       background-image: url(../media/visioning.svg);
     }
-    &--systemsthinking{
+    &--systemsthinking  &-inner{
       background-image: url(../media/systemsthinking.svg);
     }
-    &--strategy{
+    &--strategy &-inner{
       background-image: url(../media/strategy.svg);
     }
-    &--designthinking{
+    &--designthinking &-inner{
       background-image: url(../media/designthinking.svg);
     }
-    &--leadership{
+    &--leadership &-inner{
       background-image: url(../media/leadership.svg);
     }
-    &--collaboration{
+    &--collaboration &-inner{
       background-image: url(../media/collaboration.svg);
     }
 
