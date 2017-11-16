@@ -20,8 +20,8 @@
           </div>
         </div>
         <div class="row about-us__row">
-          <div class="column large-6">
-            <h2 class="partner__header">
+          <div class="column large-6 partner__header">
+            <h2>
               Our Partners
             </h2>
           </div>
