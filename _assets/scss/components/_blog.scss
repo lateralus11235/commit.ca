@@ -8,10 +8,13 @@
   &__header{
     text-align: center;
     padding-bottom: $m-big;
+    display: inline-block;
+    min-width: 100%;
   }
 
   &__post{
     padding-bottom: $m-big;
+    display: inline-block;
   }
 
   &__date{
@@ -44,13 +47,18 @@
   }
 
   &__wrapper{
-    padding-top: 24%;
+    padding-top: 34%;
     padding-bottom: 60%;
     overflow: hidden;
     background:$c-blue-water-blog linear-gradient(180deg, $c-blue-water-blog, $c-blue-water-blog-lower) left top no-repeat;
   }
   &__row.row{
-    flex-flow: column;   
+    
+    display: block;
+    @include breakpoint(large) {
+      column-count: 2;
+    }
+    
   }
   &__top{
     display: flex;

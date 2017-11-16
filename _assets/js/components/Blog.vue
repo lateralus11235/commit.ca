@@ -5,13 +5,13 @@
       
       <div class="container">
         <div class="row blog__row">
-          <div class="column large-6 blog__header">
+          <div class="column large-12 blog__header">
             <h2>
               Recent News
             </h2>
             <a href="#">Visit our blog for more</a>
           </div>
-          <div class="column large-6 blog__post" v-for="i in 3">
+          <div class="column large-12 blog__post" v-for="i in 3">
             <div class="blog__top">
               <div class="blog__date">
                 01/07

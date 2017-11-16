@@ -32,7 +32,10 @@
     display: block;
     max-width: 250px;
     margin: 0 auto;
-    padding-bottom: $m-large;
+    @include breakpoint(large) {
+      padding-bottom: $m-large;
+    }
+    
     //padding-top: $m;
     &-inner{
 
@@ -73,7 +76,9 @@
   }
   &__item.row{
     flex-flow: column;
+    padding-bottom: $m-big;
     @include breakpoint(large){
+      padding-bottom: 0;
       flex-flow: row;
     }
     
