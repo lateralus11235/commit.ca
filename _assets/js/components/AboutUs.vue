@@ -7,7 +7,7 @@
       
       <div class="container">
         <div class="row">
-          <div class="column large-6">
+          <div class="column large-6 about-us__header">
             <h2>
               Communicating IT
             </h2>
@@ -19,7 +19,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row about-us__row">
           <div class="column large-6">
             <h2 class="partner__header">
               Our Partners

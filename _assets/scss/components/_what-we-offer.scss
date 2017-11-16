@@ -15,11 +15,11 @@
     position: relative;
     width: 100%;
     padding-bottom: 85%;
-    padding-bottom: 85% + 17%;
+    padding-bottom: 85% + 29%;
     background:$c-blue-water-top linear-gradient(180deg, $c-blue-water-top, $c-blue-water-top-lower) left top no-repeat;
     z-index: 0;
     @include breakpoint($icebergMaxWidth * 1.1) {
-      padding-bottom: calc(#{$icebergMaxWidth*1.028} + 17%);
+      padding-bottom: calc(#{$icebergMaxWidth*1.028} + 29%);
     }
   }
   &__headline{

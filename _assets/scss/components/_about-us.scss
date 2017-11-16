@@ -2,11 +2,28 @@ $aboutUsBottom: 30vw;
 $aboutUsTop: 43vw;
 $aboutUsBoth: $aboutUsTop + $aboutUsBottom;
 
+$aboutUsSmallBottom: 10vw;
+$aboutUsSmallTop: 27vw;
+$aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
+
+
+
 .about-us{
   text-align: center;
   position: relative;
   z-index: 500;
-  margin-bottom: -1 * $aboutUsBoth;
+
+  margin-bottom: -1 * $aboutUsSmallBoth;
+  @include breakpoint(large) {
+    margin-bottom: -1 * $aboutUsBoth;
+  }
+
+  &__row.row{
+    display: block;
+    @include breakpoint(large){
+      display: flex;
+    }
+  }
   
   &:before {
     content: "";
@@ -15,7 +32,10 @@ $aboutUsBoth: $aboutUsTop + $aboutUsBottom;
     left: 0;
     width: 100%;
     height: 100%;
-    height: calc(100% - #{$aboutUsBoth});
+    height: calc(100% - #{$aboutUsSmallBoth});
+    @include breakpoint(large) {
+      height: calc(100% - #{$aboutUsBoth});
+    }
     z-index: 200;
     background-color: $c-blue-about;
   }
@@ -24,7 +44,10 @@ $aboutUsBoth: $aboutUsTop + $aboutUsBottom;
 
   &__wrapper{
     position: relative;
-    transform: translateY(#{-1 * $aboutUsTop});
+    transform: translateY(#{-1 * $aboutUsSmallTop});
+    @include breakpoint(large) {
+      transform: translateY(#{-1 * $aboutUsTop});
+    }
     z-index: 500;
   }
 
@@ -69,7 +92,10 @@ $aboutUsBoth: $aboutUsTop + $aboutUsBottom;
     }
     &--bottom{
 
-      bottom: $aboutUsBoth;
+      bottom: $aboutUsSmallBoth;
+      @include breakpoint(large) {
+        bottom: $aboutUsBoth;
+      }
       transform: translateY(100%);
       //margin-top: -71.42857143%;
       padding-bottom: 71.42857143%;
@@ -87,11 +113,30 @@ $aboutUsBoth: $aboutUsTop + $aboutUsBottom;
       
     }
   }
+
+  &__join{
+    font-family: $ff-oswald;
+    a{
+      text-decoration: none;
+      color: $c-yellow;
+      &:hover{
+        color: $c-white;
+      }
+    }
+  }
 }
 
 .partner {
   &__header{
-    margin-top: $aboutUsBottom * 0.5;
+    margin-top: $aboutUsSmallBottom * 0.5;
+
+    @include breakpoint(large) {
+      margin-top: $aboutUsBottom * 0.5;
+      
+    }
     transition: translateY(-50%);
+  }
+  &__link{
+    font-family: $ff-oswald;
   }
 }

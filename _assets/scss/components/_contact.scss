@@ -6,8 +6,59 @@
   padding-top: 0%;
   padding-top: calc(0% + #{$aboutUsBoth});
 
+  &__row.row{
+    display: block;
+    @include breakpoint(large){
+      display: flex;
+    }
+  }
+
   &__wrapper{
     position: relative;
     z-index: 1000;
+    padding-top: $m-large;
+    padding-bottom: $m-giant;
+  }
+
+  font-size: $fz-increased;
+
+  &-info{
+
+    text-align: center;
+    @include breakpoint(large){
+      text-align: left;
+    }
+    &__main{
+      margin-bottom: $m;
+      margin-top: $m;
+      h4{
+        font-size: $fz-medium;
+
+
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.2;
+        color: $c-yellow;
+        cursor: pointer;
+        &:hover{
+          color: $c-white;
+        }
+      }
+
+    }
+    &__address{
+      font-style: normal;
+    }
+    &__billing{
+      a{
+        text-decoration: none;
+        color: $c-yellow;
+        &:hover{
+          color: $c-white;
+        }
+      }
+    }
   }
 }
