@@ -127,6 +127,48 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
 }
 
 .partner {
+  padding-bottom: $m-big;
+  padding-top: $m-small;
+  &:first-of-type{
+    padding-top: 0;
+  }
+  &:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: -1 * $m-big;
+  }
+  &__logo{
+
+    display: block;
+    margin: 0 auto;
+    padding-bottom: $m-tiny;
+    //padding-top: $m;
+    &-inner{
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 75px;
+    }
+    &--tidal{
+
+    }
+    &--tidal &-inner{
+      height: 75px;
+      background-image: url(../media/logo-tidal.png);
+    }
+    &--isn &-inner{
+      height: 80px;
+      background-image: url(../media/logo-isn.png);
+    }
+    &--thinkitsm &-inner{
+      background-image: url(../media/logo-thinkitsm.png);
+    }
+    &--12links &-inner{
+      height: 50px;
+      background-image: url(../media/logo-12links.png);
+    }
+  }
   &__header{
     margin-top: $aboutUsSmallBottom * 0.5;
 

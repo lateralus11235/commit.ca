@@ -27,6 +27,9 @@
           </div>
           <div class="column large-6">
             <div class="partner">
+              <div class="partner__logo partner__logo--thinkitsm">
+                <div class="partner__logo-inner"></div>
+              </div>
               <div class="partner__main">
                 <p>ThinkITSM offers a compelling Continual Service Improvement (CSI) platform that provides organizations with a Software as a Service (SaaS) solution that automates their improvement journey.</p>
               </div>
@@ -38,6 +41,9 @@
             </div>
 
             <div class="partner">
+              <div class="partner__logo partner__logo--isn">
+                <div class="partner__logo-inner"></div>
+              </div>
               <div class="partner__main">
                 <p>Integral Strategy works with organizations to help them tackle their toughest, most enduring challenges. By rethinking strategy, Integral Strategy Network delivers world-class, next generation transformative change. Rethink Strategy - Unleash Potential.</p>
               </div>
@@ -49,6 +55,9 @@
             </div>
 
             <div class="partner">
+              <div class="partner__logo partner__logo--tidal">
+                <div class="partner__logo-inner"></div>
+              </div>
               <div class="partner__main">
                 <p>Tidal Migrations assists organizations with migrating or transforming their applications to run in the cloud.</p>
               </div>
@@ -60,11 +69,14 @@
             </div>
 
             <div class="partner">
+              <div class="partner__logo partner__logo--12links">
+                <div class="partner__logo-inner"></div>
+              </div>
               <div class="partner__main">
-                <p>Tidal Migrations assists organizations with migrating or transforming their applications to run in the cloud.</p>
+                <p>Focused on the co-creation of solutions for leadership, management, and organizational challenges.</p>
               </div>
               <div class="partner__link">
-                <a href="#">
+                <a href="//12links.ca">
                   Visit site
                 </a>
               </div>
