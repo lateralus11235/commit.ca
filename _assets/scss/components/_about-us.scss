@@ -58,7 +58,7 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
     height: 0;
 
 
-    &:before{
+    &-lower{
       content: "";
       @include fill;
       z-index: 50;
@@ -68,26 +68,33 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
       box-shadow: 0 0 400px 100px $c-blue-about-shadow, inset 0 0 400px 50px $c-blue-about-shadow;
     }
 
-    &:after{
+    &-higher{
       content: "";
       @include fill;
       z-index: 100;
+    }
+
+    &-lowest{
+      @include fill;
+
     }
     &--top{
       top: 0;
       transform: translateY(-100%);
       //margin-top: -71.42857143%;
       padding-bottom: 71.42857143%;
-      &:after{
+      &-higher{
 
         background-image: url(../media/newreef2.svg);
         background-size: contain;
       }
       z-index: 100;
 
-      background-image: url(../media/newreef.svg);
-      background-size: contain;
-      &:before{
+      &-lowest{
+        background-image: url(../media/newreef.svg);
+        background-size: contain;
+      }
+      &-lower{
         transform: rotate(26deg) translate(-50vw, 55vw);
       }
     }
@@ -100,17 +107,18 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
       transform: translateY(100%);
       //margin-top: -71.42857143%;
       padding-bottom: 71.42857143%;
-      &:after{
+      &-higher{
         background-image: url(../media/newreefbottom2.svg);
         background-size: contain;
       }
 
-      &:before{
+      &-lower{
         transform: rotate(23deg) translate(-46vw, 37vw);
       }
-
-      background-image: url(../media/newreefbottom.svg);
-      background-size: contain;
+      &-lowest{
+        background-image: url(../media/newreefbottom.svg);
+        background-size: contain;
+      }
       
     }
   }
@@ -202,15 +210,19 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateY(-100%);
+  transform: translateY(-90%);
+  &__inner{
+    @include fill;
 
-  background-image: url(../media/city2.svg);
-  background-size: contain;
-  background-position: right 20%;
-  background-repeat: no-repeat;
+
+    background-image: url(../media/city2.svg);
+    background-size: contain;
+    background-position: right 20%;
+    background-repeat: no-repeat;
+  }
   opacity: 0.3;
 
-  &__background{
+  &-background{
     position: absolute;
     width: 100%;
     height: 0;
@@ -219,7 +231,11 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
     top: 0;
     left: 0;
     transform: translateY(-100%);
-    background: linear-gradient(0deg, rgba($c-pink-about,70%) 0%, transparent 100%) left top no-repeat;
     z-index: 0;
+    &__inner{
+      @include fill;
+
+      background: linear-gradient(0deg, rgba($c-pink-about,70%) 0%, transparent 100%) left top no-repeat;
+    }
   }
 }

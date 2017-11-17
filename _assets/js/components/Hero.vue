@@ -14,7 +14,9 @@
       
     </div>
     <div class="iceberg">
-      <div class="iceberg__inner"></div>
+      <div class="iceberg__inner">
+        <div class="iceberg__innest"></div>
+      </div>
     </div>
   </section>
 </template>

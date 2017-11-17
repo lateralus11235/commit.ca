@@ -4,13 +4,13 @@
 
     <div class="container">
       <div class="row">
-        <div class="column medium-6 medium-offset-3 what-we-offer__headline">
+        <div class="column medium-6 medium-offset-3 what-we-offer__headline" data-aos="fade-up" data-aos-duration="1500">
           <h3>
              As a business or IT executive, communicating and achieving outcomes isn't easy. It takes hard work, specific skills, and capabilities to ensure success. Communicating IT can help you through your journey.
           </h3>
         </div>
       </div>
-      <div class="row what-we-offer__item" v-for="item in items">
+      <div class="row what-we-offer__item" data-aos="fade-up" data-aos-duration="1500" v-for="item in items">
         <div class="column large-6 ">
           
           <div class="what-we-offer__icon" :class="['what-we-offer__icon--' + item.title.replace(/\s+/g, '').toLowerCase() ]">

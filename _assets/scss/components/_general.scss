@@ -23,8 +23,33 @@ a{
   width: 100%;
   display: block;
   padding-bottom: 115.1765%;
-  background-image: url(../media/reeffb.svg);
-  background-size: contain;
+  pointer-events: none;
+
+  &__inner{
+    @include fill;
+  }
+
+  &__inner--1 &__bg{
+
+    background-image: url(../media/reeffb/reeffb1.svg);
+  }
+  &__inner--2 &__bg{
+
+    background-image: url(../media/reeffb/reeffb2.svg);
+  }
+  &__inner--3 &__bg{
+
+    background-image: url(../media/reeffb/reeffb3.svg);
+  }
+  &__inner--4 &__bg{
+
+    background-image: url(../media/reeffb/reeffb4.svg);
+  }
+  &__bg {
+    
+    @include fill;
+    background-size: contain;
+  }
   margin-top: -75%;
   margin-bottom: -10%;
   @include breakpoint(medium) {
@@ -34,11 +59,15 @@ a{
   position: relative;
 
   &--upside-down{
-    transform: scaleY(-1);
+
+    &__bg {
+      transform: scaleY(-1);
+    }
   }
 }
 
 .reef-bottom{
+  pointer-events: none;
 
   position: absolute;
   bottom: 0;
@@ -47,8 +76,33 @@ a{
   display: block;
   z-index: 50;
   padding-bottom: 100%;
-  background-image: url(../media/reefe/reefe.svg);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+
+
+  &__inner{
+    @include fill;
+  }
+
+  &__inner--1 &__bg{
+
+    background-image: url(../media/reefe/reefe1.svg);
+  }
+  &__inner--2 &__bg{
+
+    background-image: url(../media/reefe/reefe2.svg);
+  }
+  &__inner--3 &__bg{
+
+    background-image: url(../media/reefe/reefe3.svg);
+  }
+  &__inner--4 &__bg{
+
+    background-image: url(../media/reefe/reefe4.svg);
+  }
+  &__bg {
+    
+    @include fill;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 }

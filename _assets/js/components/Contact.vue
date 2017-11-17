@@ -33,11 +33,15 @@
       </div>
 
     </div>
-    <div class="reef-bottom"></div>
+    <reef-bottom></reef-bottom>
   </section>
 </template>
 <script>
+
+  import ReefBottom from '../components/ReefBottom.vue'
   export default {
-    
+    components: {
+      ReefBottom
+    }
   }
 </script>

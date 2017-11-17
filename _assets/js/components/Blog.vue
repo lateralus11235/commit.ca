@@ -4,7 +4,7 @@
     <div class="blog__wrapper">
       
       <div class="container">
-        <div class="row blog__row">
+        <div class="row blog__row"  data-aos="fade-up" data-aos-duration="1500">
           <div class="column large-12 blog__header">
             <h2>
               Recent News

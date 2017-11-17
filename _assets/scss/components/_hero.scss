@@ -26,24 +26,37 @@
   &__inner{
     width: 100%;
     padding-bottom:156.94560992%;
-    background-image: url(../media/iceberg.svg);
-    background-size: contain;
-    background-position: center;
+    position: relative;
    
     background-repeat: no-repeat;
 
-    animation: ice-berg 3s ease-in-out infinite alternate;
+    animation: ice-berg 15s ease-in-out infinite alternate;
+  }
+  &__innest{
+    background-image: url(../media/iceberg2.svg);
+    background-size: contain;
+    background-position: center;
+    @include fill;
+    animation: ice-berg-other 10s ease-in-out infinite alternate;
   }
 }
 
 @keyframes ice-berg {
   0% {
-    transform: rotate(-2deg) translate(-5px, -30px)
+    transform: translate(-5px, -30px);
   }
   50% {
-    transform: rotate(0deg) translate(0px, 0px)
+    transform: translate(0px, 0px);
   }
   100% {
-    transform: rotate(2deg) translate(10px, 30px)
+    transform: translate(10px, 30px);
+  }
+}
+@keyframes ice-berg-other {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
   }
 }

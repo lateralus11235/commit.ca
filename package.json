@@ -36,8 +36,11 @@
   },
   "homepage": "https://bitbucket.org/2nomads/nomad-jk#readme",
   "dependencies": {
+    "aos": "^2.2.0",
+    "jump.js": "^1.0.2",
     "live-server": "^1.2.0",
     "normalize.css": "^7.0.0",
+    "rellax": "^1.3.0",
     "svg4everybody": "^2.1.9",
     "vue": "^2.5.2",
     "vue-loader": "^13.4.0",

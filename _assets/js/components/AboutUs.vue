@@ -1,10 +1,16 @@
 <template>
   <section class="about-us">
-      <div class="city"></div>
-      <div class="city__background"></div>
-      
+    <div class="city">
+      <div class="city__inner rellax"  data-rellax-speed="1.45" data-rellax-percentage="0.5"></div>
+    </div>
+    <div class="city-background">
+      <div class="city-background__inner rellax" data-rellax-speed="-1.1" data-rellax-percentage="0.5"></div>
+    </div>
+    
     <div class="about-us__helper about-us__helper--top">
-      
+      <div class="about-us__helper-lower about-us__helper--top-lower"></div>
+      <div class="about-us__helper-higher about-us__helper--top-higher"></div>
+      <div class="about-us__helper-lowest about-us__helper--top-lowest rellax"  data-rellax-speed="-1.1" data-rellax-percentage="0.5"></div>
     </div>
     <div class="about-us__wrapper">
       <div class="container">
@@ -89,7 +95,9 @@
     </div>
 
     <div class="about-us__helper about-us__helper--bottom">
-      
+      <div class="about-us__helper-lower about-us__helper--bottom-lower"></div>
+      <div class="about-us__helper-higher about-us__helper--bottom-higher"></div>
+      <div class="about-us__helper-lowest about-us__helper--bottom-lowest rellax"  data-rellax-speed="-1.1" data-rellax-percentage="0.5"></div>
     </div>
   </section>
 </template>

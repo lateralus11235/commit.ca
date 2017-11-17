@@ -18,6 +18,9 @@
   import Contact from '../components/Contact.vue'
   import NavTop from '../components/NavTop.vue'
 
+  import Rellax from 'rellax'
+  import AOS from 'aos'
+
   export default {
     components: {
       Hero,
@@ -27,5 +30,11 @@
       Contact,
       NavTop
     }, 
+
+    mounted() {
+      
+      var rellax = new Rellax('.rellax')
+      var aos = AOS.init()
+    }
   }
 </script>

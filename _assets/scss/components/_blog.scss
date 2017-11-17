@@ -6,7 +6,11 @@
   position: relative;
   .reef:first-of-type{
     margin-bottom: -74%;
-    transform: scale(-1,-1);
+
+    .reef__bg{
+      transform: scale(-1,-1);
+    }
+    
   }
 
   &__header{
