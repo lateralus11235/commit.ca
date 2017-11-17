@@ -29,6 +29,21 @@
     background-image: url(../media/iceberg.svg);
     background-size: contain;
     background-position: center;
+   
     background-repeat: no-repeat;
+
+    animation: ice-berg 3s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes ice-berg {
+  0% {
+    transform: rotate(-2deg) translate(-5px, -30px)
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 0px)
+  }
+  100% {
+    transform: rotate(2deg) translate(10px, 30px)
   }
 }
