@@ -1,10 +1,12 @@
 <template>
   <section class="about-us">
+      <div class="city"></div>
+      <div class="city__background"></div>
+      
     <div class="about-us__helper about-us__helper--top">
       
     </div>
     <div class="about-us__wrapper">
-      
       <div class="container">
         <div class="row">
           <div class="column large-6 about-us__header">

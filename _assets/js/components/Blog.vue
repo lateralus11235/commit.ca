@@ -1,6 +1,6 @@
 <template>
   <section class="blog">
-    <div class="reef"></div>
+    <reef></reef>
     <div class="blog__wrapper">
       
       <div class="container">
@@ -38,11 +38,15 @@
 
     </div>
 
-    <div class="reef"></div>
+    <reef></reef>
   </section>
 </template>
 <script>
+  import Reef from '../components/Reef.vue'
   export default {
+    components: {
+      Reef
+    }
     
   }
 </script>

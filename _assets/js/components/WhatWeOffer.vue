@@ -1,6 +1,6 @@
 <template>
   <section class="what-we-offer">
-    <div class="reef"></div>
+    <reef></reef>
 
     <div class="container">
       <div class="row">
@@ -34,7 +34,11 @@
   </section>
 </template>
 <script>
+  import Reef from '../components/Reef.vue'
   export default {
+    components: {
+      Reef
+    },
     data() {
       return {
         items: [
