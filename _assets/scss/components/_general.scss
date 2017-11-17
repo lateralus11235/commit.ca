@@ -45,9 +45,10 @@ a{
   left: 0;
   width: 100%;
   display: block;
-  z-index: 0;
-  padding-bottom: 113.58711864%;
-  background-image: url(../media/reef-footer.svg);
-  background-size: contain;
-
+  z-index: 50;
+  padding-bottom: 100%;
+  background-image: url(../media/reefe/reefe.svg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
