@@ -91,6 +91,7 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
       z-index: 100;
 
       &-lowest{
+        margin-top: 5%;
         background-image: url(../media/newreef.svg);
         background-size: contain;
       }

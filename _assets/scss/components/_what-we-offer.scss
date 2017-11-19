@@ -1,7 +1,7 @@
 .what-we-offer {
   text-align: center;
   background:$c-blue-water-what linear-gradient(180deg, $c-blue-water-what, $c-blue-water-what-lower) left top no-repeat;
-  
+  position: relative;
   padding-bottom: 65%;
   @include breakpoint(medium) {
     padding-bottom: 55%;
@@ -9,7 +9,7 @@
   
 
 
-  &:before{
+  &:before,&:after{
     content: "";
     display: block;
     position: relative;
@@ -21,6 +21,12 @@
     @include breakpoint($icebergMaxWidth * 1.1) {
       padding-bottom: calc(#{$icebergMaxWidth*1.028} + 29%);
     }
+  }
+  &:after{
+    top: 0;
+    position: absolute;
+    z-index: 200;
+    opacity: 0.75;
   }
   &__headline{
     padding-bottom: $m-large;

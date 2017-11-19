@@ -10,7 +10,7 @@
     <div class="about-us__helper about-us__helper--top">
       <div class="about-us__helper-lower about-us__helper--top-lower"></div>
       <div class="about-us__helper-higher about-us__helper--top-higher"></div>
-      <div class="about-us__helper-lowest about-us__helper--top-lowest rellax"  data-rellax-speed="-1.1" data-rellax-percentage="0.5"></div>
+      <div class="about-us__helper-lowest about-us__helper--top-lowest rellax"  data-rellax-speed="-2" data-rellax-percentage="0.5"></div>
     </div>
     <div class="about-us__wrapper">
       <div class="container">
@@ -97,7 +97,7 @@
     <div class="about-us__helper about-us__helper--bottom">
       <div class="about-us__helper-lower about-us__helper--bottom-lower"></div>
       <div class="about-us__helper-higher about-us__helper--bottom-higher"></div>
-      <div class="about-us__helper-lowest about-us__helper--bottom-lowest rellax"  data-rellax-speed="-1.1" data-rellax-percentage="0.5"></div>
+      <div class="about-us__helper-lowest about-us__helper--bottom-lowest rellax"  data-rellax-speed="2" data-rellax-percentage="0.5"></div>
     </div>
   </section>
 </template>
