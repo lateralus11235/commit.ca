@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="nav__open" :class="{'nav__open--open': navOpen}">
-      <nav>
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
             <a href="#">What We Offer</a>
@@ -33,6 +33,35 @@
           </li>
         </ul>
       </nav>
+
+      <div class="sky__wrapper">
+        
+        <div class="sky sky--menu">
+          
+          <div class="sky__inner sky__inner--1">
+            <div class="sky__bg"></div>
+          </div>
+          <div class="sky__inner sky__inner--2">
+            <div class="sky__bg"></div>
+          </div>
+          <div class="sky__inner sky__inner--3">
+            <div class="sky__bg"></div>
+          </div>
+          <div class="sky__inner sky__inner--4">
+            <div class="sky__bg"></div>
+          </div>
+          <div class="sky__inner sky__inner--5">
+            <div class="sky__bg"></div>
+          </div>
+          <div class="sky__inner sky__inner--6">
+            <div class="sky__bg"></div>
+          </div>
+          <div class="sky__inner sky__inner--7">
+            <div class="sky__bg"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </template>

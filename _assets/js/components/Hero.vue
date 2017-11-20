@@ -10,6 +10,30 @@
       </div>
     </div>
 
+    <div class="sky">
+      <div class="sky__inner sky__inner--1">
+        <div class="sky__bg"></div>
+      </div>
+      <div class="sky__inner sky__inner--2">
+        <div class="sky__bg"></div>
+      </div>
+      <div class="sky__inner sky__inner--3">
+        <div class="sky__bg"></div>
+      </div>
+      <div class="sky__inner sky__inner--4">
+        <div class="sky__bg"></div>
+      </div>
+      <div class="sky__inner sky__inner--5">
+        <div class="sky__bg"></div>
+      </div>
+      <div class="sky__inner sky__inner--6">
+        <div class="sky__bg"></div>
+      </div>
+      <div class="sky__inner sky__inner--7">
+        <div class="sky__bg"></div>
+      </div>
+    </div>
+
     <div class="wave">
       
     </div>

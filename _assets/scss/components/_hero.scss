@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../media/skywithclouds.svg);
+  //background-image: url(../media/skywithclouds.svg);
   background-size: cover;
   position: relative;
   z-index: 100;
@@ -13,6 +13,76 @@
     z-index: 200;
   }
 }
+
+
+
+.sky{
+  @include fill;
+
+  &__inner{
+    @include fill;
+  }
+
+  &__inner--1 &__bg{
+
+    background-image: url(../media/sky/clouds1.svg);
+  }
+  &__inner--2 &__bg{
+
+    background-image: url(../media/sky/clouds2.svg);
+  }
+  &__inner--3 &__bg{
+
+    background-image: url(../media/sky/clouds3.svg);
+  }
+  &__inner--4 &__bg{
+
+    background-image: url(../media/sky/clouds4.svg);
+  }
+  &__inner--5 &__bg{
+
+    background-image: url(../media/sky/clouds5.svg);
+  }
+  &__inner--6 &__bg{
+
+    background-image: url(../media/sky/clouds6.svg);
+  }
+  &__inner--7 &__bg{
+
+    background-image: url(../media/sky/sky.svg);
+  }
+  &__bg {
+    
+    @include fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  z-index: 0;
+  position: absolute;
+
+  &__wrapper{
+    @include fill;
+    overflow: hidden;
+  }
+  &--menu{
+
+    content: "";
+    @include fill;
+    width: 200vmax;
+    height: 200vmax;
+    margin-left: -50vmax;
+    margin-top: -50vmax;
+    transform-origin: center;
+    transform: rotate(20deg);
+    pointer-events: none;
+
+    animation: kenBurns 16s linear infinite alternate;
+    animation-fill-mode: both;
+
+  }
+}
+
 
 .iceberg{
   width: 90%;

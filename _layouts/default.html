@@ -10,7 +10,14 @@
 
     {% include footer.html %}
 
+
+    {% assign js = site.data.manifest['main.js'] %}
+    {% if js %}
+    <script type="text/javascript" src="assets/{{ js }}"></script>
+    {% else %}
     <script type="text/javascript" src="assets/js/app.js"></script>
+    {% endif %}
+
   </body>
 
 </html>

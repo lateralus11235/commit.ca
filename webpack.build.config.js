@@ -2,12 +2,14 @@ const path = require('path');
 const webpack = require('webpack')
 const WebpackShellPlugin = require('webpack-shell-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ManifestPlugin = require('webpack-manifest-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
     entry: [ path.join(__dirname, '_assets/js/app.js'), path.join(__dirname, '_assets/scss/app.scss')],
     output: {
         path: path.join(__dirname, 'assets'),
-        filename: 'js/app.js',
+        filename: 'js/app.[hash].js',
         publicPath: '/assets'
     },
     module: {
@@ -55,19 +57,31 @@ module.exports = {
                 include: path.resolve(__dirname, '_assets/fonts'),
             },{
                 test: /\.(jpg|png|gif|svg)$/,
-                loader: 'file-loader?name=/media/[name].[ext]',
-                include: path.resolve(__dirname, '_assets/media'),
+                use: ['file-loader?name=/media/[name].[ext]',
+                  {
+                    loader: 'image-webpack-loader',
+                    options: {
+                      bypassOnDebug: true,
+                    },
+                  }
+                ],
+                include: path.resolve(__dirname, '_assets/media')
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('css/app.css'),
+        new ExtractTextPlugin('css/app.[hash].css'),
         // https://stackoverflow.com/a/39283602/903011
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
         }),
-        new WebpackShellPlugin({onBuildStart:['jekyll b']})
+        new WebpackShellPlugin({onBuildEnd:['jekyll b']}),
+        new ManifestPlugin({
+          fileName: '../_data/manifest.json'
+        }),
+
+        //new CleanWebpackPlugin(['/js','/css'])
     ],
     devtool: process.env.NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
 }
