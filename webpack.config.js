@@ -2,14 +2,14 @@ const path = require('path');
 const webpack = require('webpack')
 const WebpackShellPlugin = require('webpack-shell-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const ManifestPlugin = require('webpack-manifest-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
     watch: true,
     entry: [ path.join(__dirname, '_assets/js/app.js'), path.join(__dirname, '_assets/scss/app.scss')],
     output: {
         path: path.join(__dirname, 'assets'),
-        filename: 'js/app.[hash].js',
+        filename: 'js/app.js',
         publicPath: '/assets'
     },
     module: {
@@ -70,16 +70,16 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('css/app.[hash].css'),
+        new ExtractTextPlugin('css/app.css'),
+
+        new CleanWebpackPlugin(['./_data']),
         // https://stackoverflow.com/a/39283602/903011
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
         }),
-        new WebpackShellPlugin({onBuildStart:['jekyll b --watch']}),
-        new ManifestPlugin({
-          fileName: '../_data/manifest.json'
-        })
+        new WebpackShellPlugin({onBuildStart:['jekyll b --watch']})
+
     ],
     devtool: process.env.NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
 }

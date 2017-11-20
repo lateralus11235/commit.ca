@@ -1,7 +1,13 @@
 _site
 .idea
 node_modules
-_data/css
-_data/js
+_data
+yarn.lock
+package.json
+package-lock.json
+Gemfile
+Gemfile.lock
+webpack.build.config.js
+webpack.config.js
 /assets/css
 /assets/js

@@ -80,7 +80,7 @@ module.exports = {
         new ManifestPlugin({
           fileName: '../_data/manifest.json'
         }),
-
+        new CleanWebpackPlugin(['./assets/css', './assets/js'])
         //new CleanWebpackPlugin(['/js','/css'])
     ],
     devtool: process.env.NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
