@@ -5,12 +5,13 @@ Vue.use(Vuex)
 
 
 const state = {
-  navOpen: false
+  navOpen: false,
+  ...window.commitData
 }
 
 const mutations = {
-  TOGGLE_NAV (state) {
-    state.navOpen = !state.navOpen
+  TOGGLE_NAV (state, newValue) {
+    newValue ? state.navOpen = newValue : state.navOpen = !state.navOpen
   },
 }
 

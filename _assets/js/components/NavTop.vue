@@ -6,7 +6,7 @@
       </div>
     </div>
     
-    <div class="nav__blog">
+    <div class="nav__blog" v-if="$store.state.blogReady">
       <a href="#">Visit blog</a>
     </div>
     <div class="nav__trigger" @click="$store.commit('TOGGLE_NAV')">
@@ -20,16 +20,17 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="#">What We Offer</a>
+
+            <router-link to="/what-we-offer">What We Offer</router-link>
+          </li>
+          <li class="nav__list-item" v-if="$store.state.blogReady">
+            <router-link to="/recent-news">Recent News</router-link>
           </li>
           <li class="nav__list-item">
-            <a href="#">Recent News</a>
+            <router-link to="/about-us">About Us</router-link>
           </li>
           <li class="nav__list-item">
-            <a href="#">About Us</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#">Contact</a>
+            <router-link to="/contact">Contact</router-link>
           </li>
         </ul>
       </nav>

@@ -159,6 +159,8 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
       background-repeat: no-repeat;
       width: 100%;
       height: 75px;
+      text-indent: -9999px;
+      overflow: hidden;
     }
     &--tidal{
 
@@ -177,6 +179,26 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
     &--12links &-inner{
       height: 50px;
       background-image: url(../media/logo-12links.png);
+    }
+  }
+  
+  &:hover {
+    .partner__logo {
+      &--tidal &-inner{
+        height: 75px;
+        background-image: url(../media/colored-tidal.png);
+      }
+      &--isn &-inner{
+        height: 80px;
+        background-image: url(../media/colored-isn.png);
+      }
+      &--thinkitsm &-inner{
+        background-image: url(../media/colored-thinkitsm.png);
+      }
+      &--12links &-inner{
+        height: 50px;
+        background-image: url(../media/colored-12links.png);
+      }
     }
   }
   &__header{

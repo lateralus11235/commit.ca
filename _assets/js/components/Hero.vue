@@ -4,7 +4,7 @@
       <div class="row">
         <div class="column large-10 large-offset-1">  
           <h1>
-            Deliver your most complex outcomes successfully!
+            {{ $store.state.headline }}
           </h1>
         </div>
       </div>

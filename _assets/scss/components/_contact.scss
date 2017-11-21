@@ -54,6 +54,10 @@
       margin-bottom: $m;
       margin-top: $m;
       h4{
+        a{
+          text-decoration: none;
+          display: block;
+        }
         font-size: $fz-medium;
 
 

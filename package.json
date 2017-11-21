@@ -37,6 +37,10 @@
   "homepage": "https://bitbucket.org/2nomads/nomad-jk#readme",
   "dependencies": {
     "aos": "^2.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "image-webpack-loader": "^3.4.2",
     "jump.js": "^1.0.2",
     "live-server": "^1.2.0",
     "normalize.css": "^7.0.0",
@@ -44,8 +48,10 @@
     "svg4everybody": "^2.1.9",
     "vue": "^2.5.2",
     "vue-loader": "^13.4.0",
+    "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.3",
     "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0",
     "webpack": "^3.8.1",
     "webpack-shell-plugin": "^0.5.0"
   }

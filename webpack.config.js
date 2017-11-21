@@ -30,7 +30,8 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 query:{
-                  presets: ['es2015']
+                  "presets": ["es2015", "react"],
+                  "plugins": ["transform-object-rest-spread"]
                 },
                 exclude: path.resolve(__dirname, 'node_modules'),
             },
