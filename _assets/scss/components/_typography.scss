@@ -5,6 +5,7 @@ body{
 h1{
   font-size: $fz-giant;
   line-height: 1;
+  padding-bottom: 20%;
 
   @include breakpoint(large) {
 
