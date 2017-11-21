@@ -2,8 +2,9 @@
   <div id="app-inner" class="app-inner" :class="{'app-inner--nav': $store.state.navOpen}">
     <nav-top></nav-top>
     <hero></hero>
-    <what-we-offer id="what-we-offer"></what-we-offer>
+    <what-we-offer id="what-we-offer" :class="{'what-we-offer--no-blog': !$store.state.blogReady}"></what-we-offer>
     <blog id="recent-news" v-if="$store.state.blogReady"></blog>
+    <blog-else></blog-else>
     <about-us id="about-us"></about-us>
     <contact id="contact"></contact>
 
@@ -17,6 +18,7 @@
   import AboutUs from '../components/AboutUs.vue'
   import Contact from '../components/Contact.vue'
   import NavTop from '../components/NavTop.vue'
+  import BlogElse from '../components/BlogElse.vue'
 
   import Rellax from 'rellax'
   import AOS from 'aos'
@@ -29,7 +31,8 @@
       Blog,
       AboutUs,
       Contact,
-      NavTop
+      NavTop,
+      BlogElse
     }, 
 
     mounted() {
@@ -39,7 +42,6 @@
     },
     watch: {
       '$route' (to, from) {
-        console.log(to.path.substring(1))
         this.$store.commit('TOGGLE_NAV', false)
         jump('#'+to.path.substring(1))
       }

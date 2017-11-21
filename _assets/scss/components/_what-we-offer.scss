@@ -6,6 +6,14 @@
   @include breakpoint(medium) {
     padding-bottom: 55%;
   }
+
+  &--no-blog{
+    padding-bottom: 20%;
+    @include breakpoint(medium) {
+      padding-bottom: 15%;
+    }
+
+  }
   
 
 
