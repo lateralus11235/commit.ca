@@ -4,6 +4,7 @@ const WebpackShellPlugin = require('webpack-shell-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: [ path.join(__dirname, '_assets/js/app.js'), path.join(__dirname, '_assets/scss/app.scss')],
@@ -30,7 +31,8 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 query:{
-                  "presets": ["es2015", "react"]
+                  "presets": ["es2015", "react", "stage-2"],
+                  "plugins": ["transform-object-rest-spread"]
                 },
                 exclude: /node_modules(?!\/foundation-sites)/
             },
@@ -70,6 +72,8 @@ module.exports = {
         ]
     },
     plugins: [
+
+        //new UglifyJsPlugin(),
         new ExtractTextPlugin('css/app.[hash].css'),
         // https://stackoverflow.com/a/39283602/903011
         new webpack.ProvidePlugin({
