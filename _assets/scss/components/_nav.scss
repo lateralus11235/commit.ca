@@ -93,7 +93,11 @@
       display: block;
       text-transform: uppercase;
       font-family: $ff-oswald;
-      font-size: $fz-giant;
+      font-size: 14vw;
+      @include breakpoint(medium) {
+
+        font-size: $fz-giant;
+      }
       font-weight: $fw-bold;
       a{
         text-decoration: none;
