@@ -1,18 +1,18 @@
 <template>
   <div class="reef">
-    <div class="reef__helper">
+    <div class="reef__helper rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
       <div class="reef__helper-inner">
         
-        <div class="rellax reef__inner reef__inner--1" data-rellax-speed="-4" data-rellax-percentage="0.5">
+        <div class="rellax reef__inner reef__inner--1" data-rellax-speed="-3" data-rellax-percentage="0.5">
           <div class="reef__bg"></div>
         </div>
-        <div class="rellax reef__inner reef__inner--2" data-rellax-speed="-3" data-rellax-percentage="0.5">
+        <div class="rellax reef__inner reef__inner--2" data-rellax-speed="-2" data-rellax-percentage="0.5">
           <div class="reef__bg"></div>
         </div>
-        <div class="rellax reef__inner reef__inner--3" data-rellax-speed="-2" data-rellax-percentage="0.5">
+        <div class="rellax reef__inner reef__inner--3" data-rellax-speed="-1" data-rellax-percentage="0.5">
           <div class="reef__bg"></div>
         </div>
-        
+
       </div>
     </div>
     <div class="rellax reef__inner reef__inner--4" data-rellax-speed="-1" data-rellax-percentage="0.5">
