@@ -19,11 +19,33 @@ a{
 
   }
 }
+$reefOffset: 40%;
 .reef{
   width: 100%;
   display: block;
   padding-bottom: 115.1765%;
   pointer-events: none;
+    
+  &__helper{
+    @include fill;
+    height: 200%;
+    overflow: hidden;
+    margin-bottom: $reefOffset;
+    bottom: 0;
+    top: auto;
+
+    &-inner{
+      margin-top: $reefOffset;
+      @include fill;
+
+      .reef__inner{
+
+        height: 50%;
+        top: 50%;
+      }
+    }
+  }
+
 
   &__inner{
     @include fill;
@@ -31,15 +53,15 @@ a{
 
   &__inner--1 &__bg{
 
-    background-image: url(../media/reeffb/reeffb1.svg);
+    background-image: url(../media/reeffc/reeffb1.svg);
   }
   &__inner--2 &__bg{
 
-    background-image: url(../media/reeffb/reeffb2.svg);
+    background-image: url(../media/reeffc/reeffb2.svg);
   }
   &__inner--3 &__bg{
 
-    background-image: url(../media/reeffb/reeffb3.svg);
+    background-image: url(../media/reeffc/reeffb3.svg);
   }
   &__inner--4 &__bg{
 
@@ -105,4 +127,14 @@ a{
     background-position: top center;
     background-repeat: no-repeat;
   }
+}
+
+.footer{
+  position: relative;
+  z-index: 100;
+  margin-top: -10px;
+  padding-top: $m-small;
+  padding-bottom: $m-small;
+  background-color: $c-footer;
+  text-align: center;
 }

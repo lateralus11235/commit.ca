@@ -1,6 +1,6 @@
 <template>
   <div class="blog-else">
-    <reef></reef>
+    <reef class="reef-reverse"></reef>
   </div>
 </template>
 <script>

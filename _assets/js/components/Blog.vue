@@ -1,6 +1,6 @@
 <template>
   <section class="blog">
-    <reef></reef>
+    <reef class="reef--reverse"></reef>
     <div class="blog__wrapper">
       
       <div class="container">

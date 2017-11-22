@@ -8,6 +8,8 @@
     <about-us id="about-us"></about-us>
     <contact id="contact"></contact>
 
+    <footer-component></footer-component>
+
   </div>
 </template>
 
@@ -19,6 +21,7 @@
   import Contact from '../components/Contact.vue'
   import NavTop from '../components/NavTop.vue'
   import BlogElse from '../components/BlogElse.vue'
+  import FooterComponent from '../components/Footer.vue'
 
   import Rellax from 'rellax'
   import AOS from 'aos'
@@ -32,7 +35,8 @@
       AboutUs,
       Contact,
       NavTop,
-      BlogElse
+      BlogElse,
+      FooterComponent
     }, 
 
     mounted() {

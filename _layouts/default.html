@@ -4,13 +4,7 @@
   {% include head.html %}
 
   <body class="js-loading">
-    <section id="maincontent" role="main">
-	    {{ content }}
-    </section>
-
-    {% include footer.html %}
-
-
+	  {{ content }}
     {% assign js = site.data.manifest['main.js'] %}
     {% if js %}
     <script type="text/javascript" src="assets/{{ js }}"></script>
