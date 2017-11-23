@@ -32,24 +32,3 @@ exclude: ["vendor",
           "webpack.build.config.js"
           ]
 
-# Social links
-
-twitter: "https://twitter.com/ucla"
-facebook: "https://www.facebook.com/uclabruins"
-youtube: "https://www.youtube.com/ucla"
-instagram: "https://www.instagram.com/ucla"
-
-# Open Graph Information
-og-title: "The Optimists - UCLA"
-og-headline: "The Optimists - UCLA"
-og-image: "/assets/img/global-share-image.jpg"
-
-#Twitter Information
-
-twitter-description: "Powered by optimism @UCLA Optimists always find a way. #OptimismCan. Explore how at"
-twitter-site: "@ucla"
-twitter-hashtags: "UCLAOptimism"
-twitter-image: "/assets/img/global-share-image.jpg"
-
-#Optimists Index
-optimist-featured-amount: 8

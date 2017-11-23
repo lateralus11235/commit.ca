@@ -14,7 +14,7 @@
     </div>
     <div class="about-us__wrapper">
       <div class="container">
-        <div class="row">
+        <div class="row" id="about-us">
           <div class="column large-6 about-us__header">
             <h2 v-if="about.headline" v-text="about.headline">
               Communicating IT

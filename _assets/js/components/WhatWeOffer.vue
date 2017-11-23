@@ -2,7 +2,7 @@
   <section class="what-we-offer">
     <reef></reef>
 
-    <div class="container">
+    <div class="container" id="what-we-offer" >
       <div class="row">
         <div class="column medium-6 medium-offset-3 what-we-offer__headline" data-aos="fade-up" data-aos-duration="1500">
           <h3 v-text="$store.state.whatWeOffer.headline" v-if="$store.state.whatWeOffer.headline">

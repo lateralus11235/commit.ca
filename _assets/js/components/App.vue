@@ -2,11 +2,11 @@
   <div id="app-inner" class="app-inner" :class="{'app-inner--nav': $store.state.navOpen}">
     <nav-top></nav-top>
     <hero></hero>
-    <what-we-offer id="what-we-offer" :class="{'what-we-offer--no-blog': !$store.state.blogReady}"></what-we-offer>
+    <what-we-offer :class="{'what-we-offer--no-blog': !$store.state.blogReady}"></what-we-offer>
     <blog id="recent-news" v-if="$store.state.blogReady"></blog>
     <blog-else></blog-else>
-    <about-us id="about-us"></about-us>
-    <contact id="contact"></contact>
+    <about-us></about-us>
+    <contact></contact>
 
     <footer-component></footer-component>
 

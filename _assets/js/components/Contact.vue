@@ -2,7 +2,7 @@
   <section class="contact">
     <div class="contact__wrapper">
       <div class="container">
-        <div class="contact__row row align-middle">
+        <div class="contact__row row align-middle" id="contact">
           <div class="column large-6">
             <h2 class="contact__header">
               {{contact.headline}}
