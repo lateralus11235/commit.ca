@@ -1,12 +1,8 @@
 _site
 .idea
 node_modules
-yarn.lock
-package.json
 package-lock.json
 Gemfile
 Gemfile.lock
-webpack.build.config.js
-webpack.config.js
 /assets/css
 /assets/js

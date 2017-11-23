@@ -1,0 +1,63 @@
+{
+  "name": "nomad",
+  "version": "1.0.0",
+  "description": "2nomads' Framework for Jekyll Sites.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress",
+    "build": "cross-env NODE_ENV=production webpack -p --progress --hide-modules --config webpack.build.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ivanduch@bitbucket.org/2nomads/nomad-jk.git"
+  },
+  "author": "Ivan Duch",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^5.1.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "foundation-sites": "^6.4.4-rc1",
+    "glob": "^7.1.2",
+    "node-sass": "^4.5.3",
+    "path": "^0.12.7",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "svg-url-loader": "^2.2.0",
+    "uglify-es": "git://github.com/mishoo/UglifyJS2#harmony",
+    "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony",
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "url-loader": "^0.6.2"
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  },
+  "homepage": "https://bitbucket.org/2nomads/nomad-jk#readme",
+  "dependencies": {
+    "aos": "^2.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "image-webpack-loader": "^3.4.2",
+    "jump.js": "^1.0.2",
+    "live-server": "^1.2.0",
+    "normalize.css": "^7.0.0",
+    "rellax": "^1.3.0",
+    "svg4everybody": "^2.1.9",
+    "vue": "^2.5.2",
+    "vue-loader": "^13.4.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.3",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0",
+    "webpack": "^3.8.1",
+    "webpack-manifest-plugin": "^1.3.2",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
