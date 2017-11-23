@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_5_copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#EDEEF1" d="M200,345.062c-67.047,0-121.594-53.298-121.594-118.809c0-65.512,54.547-118.809,121.594-118.809
+			s121.594,53.297,121.594,118.809C321.594,291.764,267.047,345.062,200,345.062z M200,122.295
+			c-58.857,0-106.742,46.636-106.742,103.958S141.143,330.21,200,330.21s106.742-46.635,106.742-103.957
+			S258.857,122.295,200,122.295z"/>
+	</g>
+	<path fill="none" stroke="#EDEEF1" stroke-width="7" stroke-miterlimit="10" d="M292.262,226.104
+		c0,49.807-41.389,90.184-92.438,90.184c-51.051,0-92.439-40.377-92.439-90.184s41.389-90.184,92.439-90.184
+		C250.873,135.921,292.262,176.298,292.262,226.104z"/>
+	<rect x="191" y="92" fill="#EDEEF1" width="16" height="25"/>
+	<ellipse fill="none" stroke="#EDEEF1" stroke-width="7" stroke-miterlimit="10" cx="199.668" cy="77.479" rx="24" ry="22.539"/>
+	<polygon fill="none" stroke="#EDEEF1" stroke-width="5" stroke-miterlimit="10" points="156.619,272.919 186.4,217.013 
+		243.203,178.591 209.297,235.959 	"/>
+	<g>
+		<polygon fill="#EDEEF1" points="186.4,217.013 192.994,212.552 171.846,196.087 185.502,218.698 		"/>
+		<polygon fill="#EDEEF1" points="206.932,203.125 200.598,167.468 193.631,212.12 		"/>
+		<polygon fill="#EDEEF1" points="185.223,219.223 140.906,226.253 178.57,231.712 		"/>
+		<polygon fill="#EDEEF1" points="259.715,226.253 218.422,220.519 209.297,235.959 194.641,246.242 200.928,283.182 
+			207.736,238.32 226.453,252.861 213.613,233.369 		"/>
+	</g>
+	<ellipse fill="#EDEEF1" cx="197.331" cy="226.717" rx="4.989" ry="4.757"/>
+	<g>
+		<polygon fill="#EDEEF1" points="115,220.684 115,230.895 121.961,225.789 		"/>
+		<polygon fill="#EDEEF1" points="283,221.612 283,231.822 276.037,226.717 		"/>
+	</g>
+	<g>
+		<polygon fill="#EDEEF1" points="204.641,144 194.432,144 199.535,150.955 		"/>
+		<polygon fill="#EDEEF1" points="203.713,309 193.502,309 198.607,302.045 		"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,63 @@
+/*
+  colors
+ */
+
+$c-blue: #0f254a;
+$c-white: #fff;
+$c-blue-water-top: #85b3c5;
+$c-blue-water-top-lower: #84b2c5;
+$c-blue-water-what: #0f254a;
+$c-blue-water-what-lower: #2f436a;
+$c-blue-water-blog: #427898;
+$c-blue-water-blog-lower: #427898;
+$c-blue-water-contact: #1a3555;
+$c-blue-about:#0b1c37;
+$c-blue-about-shadow: #0a1e40;
+$c-blue-highlight: #335f83;
+
+$c-pink-about: #afa4bd;
+$c-pink-contact: #a587a5;
+
+$c-yellow: #fceba7;
+
+$c-footer: #050a12;
+
+$c-black: #000;
+
+$c-bg: $c-blue;
+$c-text: $c-white;
+
+/*
+  fonts
+ */
+$fz-giant: 3rem;
+$fz-giant-sm: 2.3rem;
+$fz-larger: 1.875rem;
+$fz-large: 1.8rem;
+$fz-medium: 1.5rem;
+$fz-increased: 1.125rem;
+$fz-regular: 1rem;
+$fz-small: 0.875rem;
+
+$ff-oswald: 'Oswald', sans-serif;
+$ff-abel: 'Abel', sans-serif;
+
+$fw-bold: 700;
+$fw-normal: 400;
+
+/*
+  spacing
+ */
+
+$m: 2rem;
+
+$m-tiny: $m/4;
+$m-small: $m/2;
+$m-big: $m*2;
+$m-large: $m*4;
+$m-giant: $m*8;
+
+/*
+  Special
+*/
+$icebergMaxWidth: 700px;

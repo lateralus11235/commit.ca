@@ -1,0 +1,188 @@
+.hero{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background-image: url(../media/skywithclouds.svg);
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+
+  &__main{
+    position: relative;
+    z-index: 200;
+  }
+}
+
+
+
+.sky{
+  @include fill;
+
+  &__inner{
+    @include fill;
+  }
+
+  &__inner--1 &__bg{
+
+    background-image: url(../media/sky/clouds1.svg);
+  }
+  &__inner--2 &__bg{
+
+    background-image: url(../media/sky/clouds2.svg);
+  }
+  &__inner--3 &__bg{
+
+    background-image: url(../media/sky/clouds3.svg);
+  }
+  &__inner--4 &__bg{
+
+    background-image: url(../media/sky/clouds4.svg);
+  }
+  &__inner--5 &__bg{
+
+    background-image: url(../media/sky/clouds5.svg);
+  }
+  &__inner--6 &__bg{
+
+    background-image: url(../media/sky/clouds6.svg);
+  }
+  &__inner--7 &__bg{
+
+    background-image: url(../media/sky/sky.svg);
+  }
+  &__bg {
+    
+    @include fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  z-index: 0;
+  position: absolute;
+
+  &__wrapper{
+    @include fill;
+    overflow: hidden;
+  }
+  &--menu{
+
+    content: "";
+    @include fill;
+    width: 200vmax;
+    height: 200vmax;
+    margin-left: -50vmax;
+    margin-top: -50vmax;
+    transform-origin: center;
+    transform: rotate(20deg);
+    pointer-events: none;
+
+    animation: kenBurns 16s linear infinite alternate;
+    animation-fill-mode: both;
+
+  }
+}
+
+
+.iceberg{
+  width: 90%;
+  max-width: $icebergMaxWidth;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(64%);
+  z-index: 0;
+
+  &__inner{
+    width: 100%;
+    padding-bottom:156.94560992%;
+    position: relative;
+   
+    background-repeat: no-repeat;
+
+    animation: ice-berg 15s ease-in-out infinite alternate;
+  }
+  &__innest{
+    background-image: url(../media/iceberg2.svg);
+    background-size: contain;
+    background-position: center;
+    @include fill;
+    animation: ice-berg-other 10s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes ice-berg {
+  0% {
+    transform: translate(-5px, -30px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(10px, 30px);
+  }
+}
+@keyframes ice-berg-other {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+
+@keyframes move-forever{
+  0%{transform: translate(-90px , 0%)}
+  100%{transform: translate(85px , 0%)} 
+}
+.wave{
+  &__main{
+    animation:move-forever 16s linear infinite;
+    &--bg{
+
+      animation-delay:-5s;
+      opacity: 1;
+    }
+    &--1{
+
+      animation-delay:-2s;
+      animation-duration:5s;
+
+      opacity: 0.3;
+    }
+    &--2{
+
+      animation-delay:-2s;
+      animation-duration:3.5s;
+      opacity: 0.4;
+    }
+    &--3{
+      animation-delay:-4s;
+      animation-duration:2.5s;
+      opacity: 0.4;
+
+    }
+  }
+
+  position: absolute;
+  bottom:0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 2.5em;
+  &--bg{
+
+    height: 1.2em;
+    z-index: 0;
+  
+  }
+}
+
+.wave__svg {
+  display: block;
+  position: absolute;
+  @include fill;
+  margin: 0;
+}
+

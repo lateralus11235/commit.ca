@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="js-loading">
+	  {{ content }}
+    {% assign js = site.data.manifest.manifest['main.js'] %}
+    {% if js %}
+    <script type="text/javascript" src="assets/{{ js }}"></script>
+    {% else %}
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    {% endif %}
+
+  </body>
+
+</html>

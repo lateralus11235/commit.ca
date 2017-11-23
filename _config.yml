@@ -1,0 +1,34 @@
+# General Configuration
+title: Communication IT Inc.
+email: ""
+description: Deliver your most complex outcomes successfully!
+baseurl: ""
+url: "http://optimists.ucla.edu"
+keywords: ""
+site-author: "UCLA"
+copyright: "2017 UCLA"
+short-url: "http://ucla.in/UDwIAQ"
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+
+#Excluded Files
+exclude: ["vendor",
+          "_assets",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "icons",
+          "package.json",
+          "package-lock.json",
+          "README.md",
+          "LICENSE.txt",
+          "js",
+          "css",
+          "webpack.config.js",
+          "webpack.build.config.js"
+          ]
+

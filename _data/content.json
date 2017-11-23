@@ -1,0 +1,97 @@
+{
+    "blogReady": false,
+    "headline": 'Deliver your most complex outcomes successfully!',
+    "about": {
+      "headline": 'Communicating IT',
+      "main": [
+       'We are a team of dedicated professionals, focused on supporting organizations with their most complex challenges. We thrive on challenges, and believe deeply that effective communication is the key to delivering value with Information Technology.' 
+      ],
+      "join": [
+        'Join our team! We offer exciting and compelling opportunities for high-performing team members. Submit your resume at <a class="mail" href="mailto:employment@commit.ca">employment@commit.ca</a>' 
+      ],
+      "partnersHeadline": 'Our Partners',
+      "partners": [
+        {
+          "id": 'thinkitsm',
+          "name": 'ThinkITSM',
+          "desc": ['ThinkITSM offers a compelling Continual Service Improvement (CSI) platform that provides organizations with a Software as a Service (SaaS) solution that automates their improvement journey.'],
+          "url": '//www.thinkitsm.com/'
+
+        },
+        {
+          "id": 'isn',
+          "name": 'Integral Strategy Network',
+          "desc": ['Integral Strategy works with organizations to help them tackle their toughest, most enduring challenges. By rethinking strategy, Integral Strategy Network delivers world-class, next generation transformative change. Rethink Strategy - Unleash Potential.'],
+          "url": '//integralstrategy.net/'
+
+        },
+        {
+          "id": 'tidal',
+          "name": 'Tidal Migrations',
+          "desc": ['Tidal Migrations assists organizations with migrating or transforming their applications to run in the cloud.'],
+          "url": '//tidalmigrations.com'
+        },
+
+        {
+          "id": '12links',
+          "name": '12 Links',
+          "desc": ['Focused on the co-creation of solutions for leadership, management, and organizational challenges.'],
+          "url": '//www.12links.ca'
+        }
+      ]
+    },
+    "whatWeOffer": {
+      "headline": "As a business or IT executive, communicating and achieving outcomes isn\'t easy. It takes hard work, specific skills, and capabilities to ensure success. Communicating IT can help you through your journey.",
+      "items": [
+
+        {
+          "title": 'Visioning',
+          "body": 'How do you determine the right outcomes? Do you forecast based on current trends, or are you willing to consider potential futures to ensure you and your team can quickly adapt to new opportunities? We can help you co-create shared, realistic outcomes that everyone will support and understand.'
+        },
+        {
+          "title": 'Systems Thinking',
+          "body": "Understanding the big picture has never been more important with today’s pace of change. Through systems mapping, solutions will become less fragile and more grounded in your organization\'s unique structure, culture, and markets. If you have ever said \"we had no idea...\" when a business solution, policy, or program failed, then systems thinking can dramatically improve your future successes."
+        },
+        {
+
+          "title": 'Strategy',
+          "body": 'How we interpret systems will drive how we solve problems to achieve outcomes. Understanding the differences between simple, complicated, complex, and chaotic systems drives unique approaches to solution development. Often, the application of Agile development methods will significantly lower risk and ensure solutions actually deliver value to your customer. We have real, practical experience in applying agile methods to address system complexity.'
+        },
+
+        {
+
+          "title": 'Design Thinking',
+          "body": 'Placing your customer at the centre of your visioning or strategic planning activities is critical to success. We leverage proven design thinking methods to ensure that solutions are designed to generate value.'
+        },
+
+
+        {
+
+          "title": 'Leadership',
+          "body": 'Effective leadership starts with the individual. Let us work with your teams to introduce mindfulness and emotional intelligence practices to improve collaboration and enhance team dynamics. We have expertise in developing hands-on leadership training programs or targeted breakaway sessions.'
+        },
+        {
+
+          "title": 'Collaboration',
+          "body": 'Outcomes can only be realized when your teams collaborate successfully. The legacy silo’ed approach to delivery ensures failure. Communicating IT can work within your teams to bring out their best, and provide facilitation guidance and coaching to ensure long-term continuity.'
+        },
+        
+      ]
+    },
+    "contact": {
+      "headline": 'Contact Us',
+      "subHeadline": 'Are you interested in our services? Make an appointment with us!',
+      "mainContact": [
+        {
+          "label": 'general@commit.ca',
+          "url": 'mailto:general@commit.ca'
+        },
+        {
+          "label": '888-299-7639',
+          "url": 'tel:888-299-7639'
+        }
+      ],
+      "address": 'Communicating IT Inc.</br>21 Marine Drive,</br>Callander,</br>ON P0H 1H0',
+      "lastLine": 'For billing inquiries you can also email us directly at <a href="mailto:billing@commit.ca">billing@commit.ca</a>'
+    }
+  }

@@ -1,0 +1,28 @@
+body{
+  font-family: $ff-abel;
+  font-size: 18px;
+}
+h1{
+  font-size: $fz-giant;
+  line-height: 1;
+  padding-bottom: 20%;
+
+  @include breakpoint(large) {
+
+    max-width: 20em;
+    margin: 0 auto;
+  }
+}
+h2{
+  font-size: $fz-giant-sm;
+  @include breakpoint(large) {
+  font-size: $fz-giant;
+  }
+}
+h1,h2{
+  text-transform: uppercase;
+  text-align: center;
+}
+h1,h2,h3,h4{
+  font-family: $ff-oswald;
+}
