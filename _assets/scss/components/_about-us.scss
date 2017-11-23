@@ -58,11 +58,22 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
     height: 0;
     z-index: 100;
     overflow: hidden;
+    
+    &-inner{
+      @include fill;
+      top: auto;
+      bottom: 0;
+      height: 50%;
 
+      &--bottom{
+        bottom: auto;
+        top: 0;
+        background-position: top;
+      }
+    }
 
     &-lower{
       content: "";
-      @include fill;
       z-index: 50;
       width: 200vw;
       transform-origin: center;
@@ -72,19 +83,17 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
 
     &-higher{
       content: "";
-      @include fill;
       z-index: 100;
     }
 
     &-lowest{
-      @include fill;
 
     }
     &--top{
       top: 0;
       transform: translateY(-100%);
       //margin-top: -71.42857143%;
-      padding-bottom: 71.42857143%;
+      padding-bottom: 71.42857143%*2;
       &-higher{
 
         background-image: url(../media/newreef2.svg);
@@ -104,12 +113,12 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
     &--bottom{
 
       bottom: $aboutUsSmallBoth;
+      padding-bottom: 71.42857143%*2;
       @include breakpoint(large) {
         bottom: $aboutUsBoth;
       }
       transform: translateY(100%);
       //margin-top: -71.42857143%;
-      padding-bottom: 71.42857143%;
       &-higher{
         background-image: url(../media/newreefbottom2.svg);
         background-size: contain;
