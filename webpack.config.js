@@ -73,7 +73,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('css/app.css'),
 
-        new CleanWebpackPlugin(['./_data']),
+        new CleanWebpackPlugin(['./_data/manifest']),
         // https://stackoverflow.com/a/39283602/903011
         new webpack.ProvidePlugin({
             $: "jquery",

@@ -82,7 +82,7 @@ module.exports = {
         }),
         new WebpackShellPlugin({onBuildEnd:['jekyll b']}),
         new ManifestPlugin({
-          fileName: '../_data/manifest.json'
+          fileName: '../_data/manifest/manifest.json'
         }),
         new CleanWebpackPlugin(['./assets/css', './assets/js'])
         //new CleanWebpackPlugin(['/js','/css'])

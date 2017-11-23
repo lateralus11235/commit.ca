@@ -5,7 +5,7 @@
 
   <body class="js-loading">
 	  {{ content }}
-    {% assign js = site.data.manifest['main.js'] %}
+    {% assign js = site.data.manifest.manifest['main.js'] %}
     {% if js %}
     <script type="text/javascript" src="assets/{{ js }}"></script>
     {% else %}

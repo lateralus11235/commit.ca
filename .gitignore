@@ -1,7 +1,6 @@
 _site
 .idea
 node_modules
-_data
 yarn.lock
 package.json
 package-lock.json
