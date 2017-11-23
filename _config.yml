@@ -3,11 +3,10 @@ title: Communication IT Inc.
 email: ""
 description: Deliver your most complex outcomes successfully!
 baseurl: ""
-url: "http://optimists.ucla.edu"
+url: "http://commit.ca"
 keywords: ""
-site-author: "UCLA"
-copyright: "2017 UCLA"
-short-url: "http://ucla.in/UDwIAQ"
+site-author: "Commit"
+copyright: "2017 Commit"
 
 # Build settings
 markdown: kramdown
@@ -31,4 +30,3 @@ exclude: ["vendor",
           "webpack.config.js",
           "webpack.build.config.js"
           ]
-
