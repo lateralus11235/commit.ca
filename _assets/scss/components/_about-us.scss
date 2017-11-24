@@ -58,6 +58,7 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
     height: 0;
     z-index: 100;
     overflow: hidden;
+    pointer-events: none;
     
     &-inner{
       @include fill;

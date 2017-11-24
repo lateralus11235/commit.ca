@@ -25,6 +25,7 @@ $reefOffset: 45%;
   display: block;
   padding-bottom: 115.1765%;
   pointer-events: none;
+  backface-visibility: hidden;
   
 
   &__helper{
@@ -38,6 +39,7 @@ $reefOffset: 45%;
     &-inner{
       margin-top: $reefOffset;
       @include fill;
+      backface-visibility: hidden;
 
       .reef__inner{
 
@@ -169,6 +171,8 @@ $reefOffset: 45%;
 }
 
 .rellax{
+  transform: translate3d(0,0,0);
+  pointer-events: none;
   will-change: transform;
   backface-visibility: hidden;
 }
