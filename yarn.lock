@@ -5227,7 +5227,7 @@ supports-color@^4.0.0, supports-color@^4.2.1, supports-color@^4.4.0:
   dependencies:
     has-flag "^2.0.0"
 
-svg-url-loader@^2.2.0:
+svg-url-loader@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/svg-url-loader/-/svg-url-loader-2.3.0.tgz#6ea03f387ed09be1a8f270df6849573deca717b3"
   dependencies:

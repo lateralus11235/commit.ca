@@ -58,7 +58,7 @@ module.exports = {
                 loader: 'file-loader?name=/fonts/[name].[ext]',
                 include: path.resolve(__dirname, '_assets/fonts'),
             },{
-                test: /\.(jpg|png|gif|svg)$/,
+                test: /\.(jpg|png|gif)$/,
                 use: ['file-loader?name=/media/[name].[ext]',
                   {
                     loader: 'image-webpack-loader',
@@ -68,7 +68,11 @@ module.exports = {
                   }
                 ],
                 include: path.resolve(__dirname, '_assets/media')
-            }
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-url-loader',
+            },
         ]
     },
     plugins: [
