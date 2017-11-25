@@ -87,11 +87,11 @@
           "url": 'mailto:general@commit.ca'
         },
         {
-          "label": '888-299-7639',
-          "url": 'tel:888-299-7639'
+          "label": '705-845-1258',
+          "url": 'tel:705-845-1258'
         }
       ],
-      "address": 'Communicating IT Inc.</br>21 Marine Drive,</br>Callander,</br>ON P0H 1H0',
+      "address": 'Communicating IT Inc.</br>Suite 220</br>8 Telegram Mews</br>Toronto, ON</br>M5V 3Z5</br>Canada',
       "lastLine": 'For billing inquiries you can also email us directly at <a href="mailto:billing@commit.ca">billing@commit.ca</a>'
     }
   }
