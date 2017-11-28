@@ -38,10 +38,13 @@ const app = new Vue({
 
 export { app, router, store }
 
+const hostName = window.location.hostname.split('.');
+if(hostName[hostName.length - 2] === '2nomads' && hostName[hostName.length - 1] === 'online') {
 
-(function (d, t) {
-  var ph = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  ph.type = 'text/javascript';
-  ph.src = '//my.2nomads.org/?p=285&ph_apikey=97aaeff6a15f4bffecd882b172de1e4c';
-  s.parentNode.insertBefore(ph, s);
-})(document, 'script');
+  (function (d, t) {
+    var ph = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    ph.type = 'text/javascript';
+    ph.src = '//my.2nomads.org/?p=285&ph_apikey=97aaeff6a15f4bffecd882b172de1e4c';
+    s.parentNode.insertBefore(ph, s);
+  })(document, 'script');
+}
