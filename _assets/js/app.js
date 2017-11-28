@@ -9,7 +9,6 @@ import store from './store'
 
 Vue.use(Router)
 
-
 const router = new Router({
   mode: 'hash', //history
   routes: [
@@ -38,3 +37,11 @@ const app = new Vue({
 
 
 export { app, router, store }
+
+
+(function (d, t) {
+  var ph = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  ph.type = 'text/javascript';
+  ph.src = '//my.2nomads.org/?p=285&ph_apikey=97aaeff6a15f4bffecd882b172de1e4c';
+  s.parentNode.insertBefore(ph, s);
+})(document, 'script');
