@@ -4,6 +4,14 @@
   <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0f254a">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21855604-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-21855604-2');
+  </script>
+
   {% assign css = site.data.manifest.manifest['main.css'] %}
   {% if css %}
   <link rel="stylesheet" href="assets/{{ css }}">
