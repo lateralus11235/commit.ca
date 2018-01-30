@@ -1,4 +1,4 @@
 # commit.ca
 Communicating IT Inc 
 
-New site coming soon!
+Public website, at [http://commit.ca](http://commit.ca). Pull requests for typos welcome :)
