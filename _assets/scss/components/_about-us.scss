@@ -23,6 +23,9 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
     @include breakpoint(large){
       display: flex;
       justify-content: center;
+      align-items: center;
+      margin-top: $m-large;
+      margin-bottom: $m-large;
     }
   }
   
@@ -151,12 +154,23 @@ $aboutUsSmallBoth: $aboutUsSmallTop + $aboutUsSmallBottom;
 .partner {
   padding-bottom: $m-big;
   padding-top: $m-small;
+  @include breakpoint(large) {
+    padding-top: $m-big;
+    padding-bottom: $m-big;
+  }
   &:first-of-type{
     padding-top: 0;
+    @include breakpoint(large) {
+      padding-top: $m-big;
+    }
   }
   &:last-of-type{
     padding-bottom: 0;
     margin-bottom: -1 * $m-big;
+    @include breakpoint(large) {
+      padding-bottom: $m-big;
+      margin-bottom: 0;
+    }
   }
   &__logo{
 
