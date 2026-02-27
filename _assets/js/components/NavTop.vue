@@ -20,17 +20,16 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
-
-            <router-link to="/what-we-offer">What We Offer</router-link>
+            <a href="#what-we-offer">What We Offer</a>
           </li>
           <li class="nav__list-item" v-if="$store.state.blogReady">
-            <router-link to="/recent-news">Recent News</router-link>
+            <a href="#recent-news">Recent News</a>
           </li>
           <li class="nav__list-item">
-            <router-link to="/about-us">About Us</router-link>
+            <a href="#about-us">About Us</a>
           </li>
           <li class="nav__list-item">
-            <router-link to="/contact">Contact</router-link>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

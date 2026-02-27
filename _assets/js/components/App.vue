@@ -25,7 +25,6 @@
 
   import Rellax from 'rellax'
   import AOS from 'aos'
-  import jump from 'jump.js'
 
   export default {
     components: {
@@ -43,12 +42,6 @@
       
       var rellax = new Rellax('.rellax')
       var aos = AOS.init()
-    },
-    watch: {
-      '$route' (to, from) {
-        this.$store.commit('TOGGLE_NAV', false)
-        jump('#'+to.path.substring(1))
-      }
     }
   }
 </script>
