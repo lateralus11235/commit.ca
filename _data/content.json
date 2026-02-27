@@ -12,36 +12,12 @@
     "partnersHeadline": "Our Partners",
     "partners": [
       {
-        "id": "thinkitsm",
-        "name": "ThinkITSM",
-        "desc": [
-          "ThinkITSM offers a compelling Continual Service Improvement (CSI) platform that provides organizations with a Software as a Service (SaaS) solution that automates their improvement journey."
-        ],
-        "url": "//www.thinkitsm.com/"
-      },
-      {
-        "id": "isn",
-        "name": "Integral Strategy Network",
-        "desc": [
-          "Integral Strategy 2.0 works with organizations to help them tackle their toughest, most enduring challenges. By rethinking strategy, Integral Strategy Network delivers world-class, next generation transformative change. Rethink Strategy - Unleash Potential."
-        ],
-        "url": "//integralstrategy.net/"
-      },
-      {
         "id": "tidal",
-        "name": "Tidal Migrations",
+        "name": "Tidal",
         "desc": [
           "Tidal Migrations assists organizations with migrating or transforming their applications to run in the cloud."
         ],
-        "url": "//tidalmigrations.com"
-      },
-      {
-        "id": "12links",
-        "name": "12 Links",
-        "desc": [
-          "Focused on the co-creation of solutions for leadership, management, and organizational challenges."
-        ],
-        "url": "//www.12links.ca"
+        "url": "//tidalcloud.com"
       }
     ]
   },
@@ -88,6 +64,6 @@
       }
     ],
     "address": "Communicating IT Inc.</br>Suite 220</br>8 Telegram Mews</br>Toronto, ON</br>M5V 3Z5</br>Canada",
-    "lastLine": "For billing inquiries you can also email us directly at <a href=\"mailto:billing@commit.ca\">billing@commit.ca</a>"
+    "lastLine": ""
   }
 }
