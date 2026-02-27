@@ -3,10 +3,11 @@ title: Communication IT Inc.
 email: ""
 description: Deliver your most complex outcomes successfully!
 baseurl: ""
-url: "http://commit.ca"
+url: "https://commit.ca"
 keywords: ""
 site-author: "Commit"
 copyright: "2017 Commit"
+google_analytics_id: ""
 
 # Build settings
 markdown: kramdown

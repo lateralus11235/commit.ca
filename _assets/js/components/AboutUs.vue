@@ -40,7 +40,7 @@
                 <p v-for="paragraph in partner.desc" v-text="paragraph"></p>
               </div>
               <div class="partner__link">
-                <a :href="partner.url" target="_blank">
+                <a :href="partner.url" target="_blank" rel="noopener noreferrer">
                   Visit site
                 </a>
               </div>
