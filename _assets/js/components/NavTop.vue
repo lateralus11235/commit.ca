@@ -75,11 +75,17 @@
     methods: {
       goToSection(id) {
         this.$store.commit('TOGGLE_NAV', false)
-        const target = document.getElementById(id)
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' })
-          window.history.replaceState(null, '', `#${id}`)
-        }
+
+        // Wait until the nav-lock class is removed, then scroll.
+        window.requestAnimationFrame(() => {
+          window.requestAnimationFrame(() => {
+            const target = document.getElementById(id)
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              window.history.replaceState(null, '', `#${id}`)
+            }
+          })
+        })
       }
     },
     data() {

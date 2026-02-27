@@ -11,7 +11,11 @@ const state = {
 
 const mutations = {
   TOGGLE_NAV (state, newValue) {
-    newValue ? state.navOpen = newValue : state.navOpen = !state.navOpen
+    if (typeof newValue === 'boolean') {
+      state.navOpen = newValue
+      return
+    }
+    state.navOpen = !state.navOpen
   },
 }
 
