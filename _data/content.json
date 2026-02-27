@@ -23,26 +23,32 @@
     "headline": "As a business or IT executive, communicating and achieving outcomes isn't easy. It takes hard work, specific skills, and capabilities to ensure success. Communicating IT can help you through your journey.",
     "items": [
       {
+        "icon": "visioning",
         "title": "Strategic Outcomes & Future State Alignment",
         "body": "Define clear, shared outcomes grounded in realistic assumptions and informed by multiple potential futures. This service helps leadership teams align around measurable objectives, assess strategic scenarios, and translate ambition into practical direction. Through structured facilitation and future-state modeling, organizations gain clarity, alignment, and a foundation for disciplined execution."
       },
       {
+        "icon": "systemsthinking",
         "title": "Enterprise Systems Analysis",
         "body": "Understand the structural dynamics that shape performance and risk. This service applies systems mapping to reveal interdependencies across people, processes, policies, and markets. By identifying feedback loops and leverage points, organizations design solutions that are resilient, less fragile, and better suited to their unique context. The result is improved foresight and reduced implementation failure."
       },
       {
+        "icon": "strategy",
         "title": "Complexity-Informed Strategy Development",
         "body": "Develop strategy informed by the nature of the system you are operating within. This service distinguishes between simple, complicated, complex, and chaotic environments to guide appropriate solution design. Where appropriate, adaptive and iterative delivery models are applied to lower risk and improve value realization. The outcome is a pragmatic strategy aligned to uncertainty, customer value, and execution capability."
       },
       {
+        "icon": "designthinking",
         "title": "Human-Centred Solution Design",
         "body": "Place the customer and end-user at the centre of strategic and operational decisions. Using structured discovery, prototyping, and feedback methods, this service ensures that solutions are grounded in real needs and validated before scale. Deliverables include insight synthesis, tested concepts, and design principles that translate into measurable value."
       },
       {
+        "icon": "leadership",
         "title": "Leadership Development & Performance Enablement",
         "body": "Strengthen leadership effectiveness at the individual and team levels. This service introduces practical emotional intelligence, mindfulness, and behavioural frameworks that improve decision-making, collaboration, and accountability. Programs are tailored to organizational context and delivered through structured workshops, facilitated sessions, and applied learning experiences."
       },
       {
+        "icon": "collaboration",
         "title": "High-Performance Team Facilitation",
         "body": "Enable teams to collaborate effectively across functional and structural boundaries. This service addresses silo behaviour, decision friction, and communication breakdowns through facilitation, structured working models, and coaching. The objective is sustained team alignment, improved delivery continuity, and measurable improvements in collective performance."
       }

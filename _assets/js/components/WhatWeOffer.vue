@@ -12,7 +12,7 @@
       <div class="row what-we-offer__item" data-aos="fade-up" data-aos-duration="1500" v-for="item in items">
         <div class="column large-6 ">
           
-          <div class="what-we-offer__icon" :class="['what-we-offer__icon--' + item.title.replace(/\s+/g, '').toLowerCase() ]">
+          <div class="what-we-offer__icon" :class="['what-we-offer__icon--' + (item.icon || item.title.replace(/\\s+/g, '').toLowerCase()) ]">
             <div class="what-we-offer__icon-inner"></div>
           </div>
         </div>
