@@ -20,16 +20,16 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="#what-we-offer">What We Offer</a>
+            <a href="#what-we-offer" @click.prevent="goToSection('what-we-offer')">What We Offer</a>
           </li>
           <li class="nav__list-item" v-if="$store.state.blogReady">
-            <a href="#recent-news">Recent News</a>
+            <a href="#recent-news" @click.prevent="goToSection('recent-news')">Recent News</a>
           </li>
           <li class="nav__list-item">
-            <a href="#about-us">About Us</a>
+            <a href="#about-us" @click.prevent="goToSection('about-us')">About Us</a>
           </li>
           <li class="nav__list-item">
-            <a href="#contact">Contact</a>
+            <a href="#contact" @click.prevent="goToSection('contact')">Contact</a>
           </li>
         </ul>
       </nav>
@@ -70,6 +70,16 @@
     computed: {
       navOpen() {
         return this.$store.state.navOpen
+      }
+    },
+    methods: {
+      goToSection(id) {
+        this.$store.commit('TOGGLE_NAV', false)
+        const target = document.getElementById(id)
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          window.history.replaceState(null, '', `#${id}`)
+        }
       }
     },
     data() {
