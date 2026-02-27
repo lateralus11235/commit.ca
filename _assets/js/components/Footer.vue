@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="column">
-          Copyright © 2017 Communicating IT Inc. All Rights Reserved. Designed by <a href="//2nomads.org" target="_blank" rel="noopener noreferrer">2nomads</a>.      
+          Copyright © {{ currentYear }} Communicating IT Inc. All Rights Reserved.
         </div>
       </div>
     </div>
@@ -13,6 +13,10 @@
 </template>
 <script>
   export default {
-    
+    computed: {
+      currentYear () {
+        return new Date().getFullYear()
+      }
+    }
   }
 </script>
