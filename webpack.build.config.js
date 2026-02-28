@@ -1,92 +1,95 @@
-const path = require('path');
-const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const ManifestPlugin = require('webpack-manifest-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
+const { VueLoaderPlugin } = require('vue-loader')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-    entry: [ path.join(__dirname, '_assets/js/app.js'), path.join(__dirname, '_assets/scss/app.scss')],
-    output: {
-        path: path.join(__dirname, 'assets'),
-        filename: 'js/app.[hash].js',
-        publicPath: '/assets'
-    },
-    module: {
-        rules: [{
-              test: /\.vue$/,
-              loader: 'vue-loader',
-              exclude: path.resolve(__dirname, 'node_modules'),
-              options: {
-                loaders: {
-                  scss: ExtractTextPlugin.extract({
-                      use: 'css-loader!sass-loader',
-                      fallback: 'vue-style-loader'
-                  }),
-                }
-              },
+  mode: 'production',
+  entry: {
+    main: [path.join(__dirname, '_assets/js/app.js'), path.join(__dirname, '_assets/scss/app.scss')]
+  },
+  output: {
+    path: path.join(__dirname, 'assets'),
+    filename: 'js/app.[contenthash].js',
+    publicPath: '/assets/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
             }
-            ,{
-                test: /\.js$/,
-                loader: 'babel-loader',
-                query:{
-                  "presets": ["es2015", "react", "stage-2"],
-                  "plugins": ["transform-object-rest-spread"]
-                },
-                exclude: /node_modules(?!\/foundation-sites)/
-            },
-            {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                      use: 'css-loader!sass-loader',
-                      fallback: 'style-loader'
-                  })
-            },
-            {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                      use: 'css-loader!sass-loader',
-                      fallback: 'style-loader'
-                  })
-            },/*
-            {
-                test: /\.svg$/,
-                loader: 'svg-url-loader',
-            },*/{
-                test: /\.(eot|otf|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=/fonts/[name].[ext]',
-                include: path.resolve(__dirname, '_assets/fonts'),
-            },{
-                test: /\.(jpg|png|gif)$/,
-                use: ['file-loader?name=/media/[name].[ext]',
-                  {
-                    loader: 'image-webpack-loader',
-                    options: {
-                      bypassOnDebug: true,
-                    },
-                  }
-                ],
-                include: path.resolve(__dirname, '_assets/media')
-            },
-            {
-                test: /\.svg$/,
-                loader: 'svg-url-loader',
-            },
+          }
         ]
-    },
-    plugins: [
-
-        //new UglifyJsPlugin(),
-        new ExtractTextPlugin('css/app.[hash].css'),
-        // https://stackoverflow.com/a/39283602/903011
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
-        }),
-        new ManifestPlugin({
-          fileName: '../_data/manifest/manifest.json'
-        }),
-        new CleanWebpackPlugin(['./assets/css', './assets/js'])
-        //new CleanWebpackPlugin(['/js','/css'])
-    ],
-    devtool: process.env.NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.(eot|otf|ttf|woff|woff2)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'media/[name][ext]'
+        }
+      }
+    ]
+  },
+  plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['css/*', 'js/*']
+    }),
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'css/app.[contenthash].css'
+    }),
+    new WebpackManifestPlugin({
+      fileName: '../_data/manifest/manifest.json',
+      generate: (_seed, files) => {
+        const manifest = {}
+        files.forEach((file) => {
+          const normalizedPath = file.path.replace(/^auto\//, '').replace(/^\//, '')
+          const noAssetsPrefix = normalizedPath.replace(/^assets\//, '')
+          if (file.name === 'main.js' || file.name === 'main.css' || file.name === 'main.js.map' || file.name === 'main.css.map') {
+            manifest[file.name] = noAssetsPrefix
+          } else {
+            manifest[`/${noAssetsPrefix}`] = `/${noAssetsPrefix}`
+          }
+        })
+        return manifest
+      }
+    })
+  ],
+  devtool: 'source-map'
 }

@@ -25,31 +25,31 @@
 
   &__inner--1 &__bg{
 
-    background-image: url(../media/sky/clouds1.svg);
+    background-image: url(../media/clouds1.svg);
   }
   &__inner--2 &__bg{
 
-    background-image: url(../media/sky/clouds2.svg);
+    background-image: url(../media/clouds2.svg);
   }
   &__inner--3 &__bg{
 
-    background-image: url(../media/sky/clouds3.svg);
+    background-image: url(../media/clouds3.svg);
   }
   &__inner--4 &__bg{
 
-    background-image: url(../media/sky/clouds4.svg);
+    background-image: url(../media/clouds4.svg);
   }
   &__inner--5 &__bg{
 
-    background-image: url(../media/sky/clouds5.svg);
+    background-image: url(../media/clouds5.svg);
   }
   &__inner--6 &__bg{
 
-    background-image: url(../media/sky/clouds6.svg);
+    background-image: url(../media/clouds6.svg);
   }
   &__inner--7 &__bg{
 
-    background-image: url(../media/sky/sky.svg);
+    background-image: url(../media/sky.svg);
   }
   &__bg {
     
@@ -185,4 +185,3 @@
   @include fill;
   margin: 0;
 }
-

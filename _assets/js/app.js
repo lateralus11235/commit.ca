@@ -1,42 +1,12 @@
 import svg4everybody from 'svg4everybody'
 
-import Vue from 'vue'
-import Router from 'vue-router'
-import { sync } from 'vuex-router-sync'
+import { createApp } from 'vue'
 import App from './components/App.vue'
-
 import store from './store'
-
-Vue.use(Router)
-
-const router = new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-      component: App,
-      alias: ['/what-we-offer', '/recent-news', '/about-us', '/contact']
-    },
-  ],
-  scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0 }
-  }
-})
-
-const app = new Vue({
-  router,
-  store,
-  el: '#app', 
-  components:{
-    App,
-  },
-  mounted() {
-    svg4everybody();
-  }
-})
-
-
-export { app, router, store }
+const app = createApp(App)
+app.use(store)
+app.mount('#app')
+svg4everybody()
 
 const hostName = window.location.hostname.split('.');
 if(hostName[hostName.length - 2] === '2nomads' && hostName[hostName.length - 1] === 'online') {

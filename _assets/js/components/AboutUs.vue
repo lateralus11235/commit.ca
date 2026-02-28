@@ -16,28 +16,25 @@
       <div class="container">
         <div class="row" id="about-us">
           <div class="column large-6 about-us__header">
-            <h2 v-if="about.headline" v-text="about.headline">
-              Communicating IT
-            </h2>
-            <p v-for="paragraph in about.main" v-text="paragraph"></p>
-            <p class="about-us__join" v-html="paragraph" v-for="paragraph in about.join"></p>
+            <h2 v-if="about.headline" v-text="about.headline"></h2>
+            <p v-for="(paragraph, index) in about.main" :key="'about-main-' + index" v-text="paragraph"></p>
+            <p class="about-us__join" v-for="(paragraph, index) in about.join" :key="'about-join-' + index" v-html="paragraph"></p>
           </div>
         </div>
         <div class="row about-us__row">
           <div class="column large-6 partner__header">
-            <h2 v-text="about.partnersHeadline">
-            </h2>
+            <h2 v-text="about.partnersHeadline"></h2>
           </div>
           <div class="column large-6">
 
-            <div class="partner" v-for="partner in partners">
+            <div class="partner" v-for="partner in partners" :key="partner.id">
               <div class="partner__logo" :class="['partner__logo--'+partner.id]">
                 <div class="partner__logo-inner">
                   {{ partner.name }}
                 </div>
               </div>
               <div class="partner__main">
-                <p v-for="paragraph in partner.desc" v-text="paragraph"></p>
+                <p v-for="(paragraph, index) in partner.desc" :key="partner.id + '-' + index" v-text="paragraph"></p>
               </div>
               <div class="partner__link">
                 <a :href="partner.url" target="_blank" rel="noopener noreferrer">

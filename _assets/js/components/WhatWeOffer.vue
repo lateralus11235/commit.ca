@@ -9,7 +9,7 @@
           </h3>
         </div>
       </div>
-      <div class="row what-we-offer__item" data-aos="fade-up" data-aos-duration="1500" v-for="item in items">
+      <div class="row what-we-offer__item" data-aos="fade-up" data-aos-duration="1500" v-for="(item, index) in items" :key="'offer-' + index">
         <div class="column large-6 ">
           
           <div class="what-we-offer__icon" :class="['what-we-offer__icon--' + (item.icon || item.title.replace(/\\s+/g, '').toLowerCase()) ]">

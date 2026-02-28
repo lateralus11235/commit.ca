@@ -1,0 +1,13 @@
+/*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
+
+/**
+* @vue/runtime-dom v3.5.29
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/shared v3.5.29
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
