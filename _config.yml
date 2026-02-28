@@ -1,9 +1,10 @@
 # General Configuration
-title: Communication IT Inc.
+title: Communicating IT Inc.
 email: ""
 description: Deliver your most complex outcomes successfully!
 baseurl: ""
 url: "https://commit.ca"
+social_image: "/assets/media/logo.svg"
 keywords: ""
 site-author: "Commit"
 copyright: "2017 Commit"

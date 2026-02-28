@@ -2,9 +2,12 @@
   {% assign page_title = page.title | default: site.title %}
   {% assign page_description = page.description | default: site.description %}
   {% assign canonical_url = page.url | replace:'index.html','' | absolute_url %}
+  {% assign social_image = site.social_image | default: '/assets/media/logo.svg' | absolute_url %}
   <meta charset="UTF-8">
   <title>{{ page_title | escape }}</title>
-  <meta itemprop="description" name="description" content="{{ page_description | escape }}" />
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta itemprop="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ site.site-author | escape }}">
   <link rel="canonical" href="{{ canonical_url }}">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="{{ page_title | escape }}">
@@ -12,11 +15,24 @@
   <meta property="og:url" content="{{ canonical_url }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.title | escape }}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ social_image }}">
+  <meta property="og:image:alt" content="{{ site.title | escape }}">
+  <meta property="og:locale" content="en_CA">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page_title | escape }}">
   <meta name="twitter:description" content="{{ page_description | escape }}">
+  <meta name="twitter:image" content="{{ social_image }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0f254a">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "logo": {{ social_image | jsonify }}
+    }
+  </script>
   {% if site.google_analytics_id %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
   <script>

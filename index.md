@@ -1,6 +1,6 @@
 ---
 layout: home
 lang: en
-title: "Communications IT Inc."
+title: "Communicating IT Inc."
 
 ---
