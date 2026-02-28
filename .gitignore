@@ -2,5 +2,3 @@ _site
 .idea
 node_modules
 package-lock.json
-Gemfile
-Gemfile.lock

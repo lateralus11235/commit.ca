@@ -11,7 +11,7 @@ google_analytics_id: "G-7D5ETBXWCH"
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
 

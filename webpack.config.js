@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack')
-const WebpackShellPlugin = require('webpack-shell-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
@@ -79,18 +78,7 @@ module.exports = {
             $: "jquery",
             jQuery: "jquery"
         }),
-        new WebpackShellPlugin({onBuildStart:['jekyll b --watch']})
-
+        
     ],
     devtool: process.env.NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
 }
-
-// start live server
-var liveServer = require("live-server");
-var params = {
-    port: 8080, // Set the server port. Defaults to 8080.
-    root: "_site", // Set root directory that's being served. Defaults to cwd.
-    open: true, // When false, it won't load your browser by default.
-    logLevel: 1 // 0 = errors only, 1 = some, 2 = lots
-};
-liveServer.start(params);

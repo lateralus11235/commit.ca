@@ -4,8 +4,12 @@
   "description": "2nomads' Framework for Jekyll Sites.",
   "main": "gulpfile.js",
   "scripts": {
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress",
-    "build": "cross-env NODE_ENV=production webpack -p --progress --hide-modules --config webpack.build.config.js"
+    "watch:assets": "cross-env NODE_ENV=development webpack --watch --progress --config webpack.config.js",
+    "build:assets": "cross-env NODE_ENV=production webpack --progress --config webpack.build.config.js",
+    "build:site": "bundle exec jekyll build",
+    "serve:site": "bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload",
+    "watch": "npm run watch:assets",
+    "build": "npm run build:assets && npm run build:site"
   },
   "repository": {
     "type": "git",
@@ -27,6 +31,7 @@
     "sass": "^1.93.2",
     "path": "^0.12.7",
     "sass-loader": "^6.0.6",
+    "node-sass": "npm:sass@^1.93.2",
     "style-loader": "^0.19.0",
     "svg-url-loader": "^2.3.0",
     "uglify-es": "^3.3.10",

@@ -1,10 +1,8 @@
 const path = require('path');
 const webpack = require('webpack')
-const WebpackShellPlugin = require('webpack-shell-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: [ path.join(__dirname, '_assets/js/app.js'), path.join(__dirname, '_assets/scss/app.scss')],
@@ -84,7 +82,6 @@ module.exports = {
             $: "jquery",
             jQuery: "jquery"
         }),
-        new WebpackShellPlugin({onBuildEnd:['jekyll b']}),
         new ManifestPlugin({
           fileName: '../_data/manifest/manifest.json'
         }),
